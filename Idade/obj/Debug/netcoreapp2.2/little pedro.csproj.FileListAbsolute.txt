@@ -1,0 +1,11 @@
+C:\Users\40205836844\Desktop\Exercicios\little pedro\bin\Debug\netcoreapp2.2\little pedro.deps.json
+C:\Users\40205836844\Desktop\Exercicios\little pedro\bin\Debug\netcoreapp2.2\little pedro.runtimeconfig.json
+C:\Users\40205836844\Desktop\Exercicios\little pedro\bin\Debug\netcoreapp2.2\little pedro.runtimeconfig.dev.json
+C:\Users\40205836844\Desktop\Exercicios\little pedro\bin\Debug\netcoreapp2.2\little pedro.dll
+C:\Users\40205836844\Desktop\Exercicios\little pedro\bin\Debug\netcoreapp2.2\little pedro.pdb
+C:\Users\40205836844\Desktop\Exercicios\little pedro\obj\Debug\netcoreapp2.2\little pedro.csprojAssemblyReference.cache
+C:\Users\40205836844\Desktop\Exercicios\little pedro\obj\Debug\netcoreapp2.2\little pedro.csproj.CoreCompileInputs.cache
+C:\Users\40205836844\Desktop\Exercicios\little pedro\obj\Debug\netcoreapp2.2\little pedro.AssemblyInfoInputs.cache
+C:\Users\40205836844\Desktop\Exercicios\little pedro\obj\Debug\netcoreapp2.2\little pedro.AssemblyInfo.cs
+C:\Users\40205836844\Desktop\Exercicios\little pedro\obj\Debug\netcoreapp2.2\little pedro.dll
+C:\Users\40205836844\Desktop\Exercicios\little pedro\obj\Debug\netcoreapp2.2\little pedro.pdb
