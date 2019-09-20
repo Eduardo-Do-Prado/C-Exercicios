@@ -1,32 +1,31 @@
 ﻿using System;
 
-namespace Par_ou_ímpar
+namespace Par
 {
     class Program
     {
         static void Main(string[] args)
         {
             int x;
-            
+            string func;
 
             
             do{
-            
 
-            Console.WriteLine("Digite um número inteiro: ");
-            x = double.Parse (Console.ReadLine());
+            Console.WriteLine("Digite um numero");
+            x = int.Parse (Console.ReadLine());
 
             if (x % 2 == 0){
-            Console.WriteLine("Esse número é par");}
-    
-            else{
-            Console.WriteLine("Esse número é ímpar");}
+                Console.WriteLine("Par");
 
-            Console.WriteLine("(1) para ir novamente ou (0) para sair");
-            fx = Console.ReadLine();}
+            }else{
+                Console.WriteLine("Impar");
+                }
 
-            while(fx == "(1)");                
-            
+            Console.WriteLine("(1) para ir novamente ou (f) para sair");
+            func = Console.ReadLine();}
+
+            while(func == "1"); 
         }
     }
 }

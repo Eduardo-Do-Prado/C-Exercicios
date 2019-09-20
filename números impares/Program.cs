@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _100
+namespace _numeros_impares
 {
     class Program
     {
