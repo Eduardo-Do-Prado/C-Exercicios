@@ -1,0 +1,11 @@
+C:\Users\40205836844\Desktop\Exercicios\áreas\obj\Debug\netcoreapp2.2\Áreas.csprojAssemblyReference.cache
+C:\Users\40205836844\Desktop\Exercicios\áreas\obj\Debug\netcoreapp2.2\Áreas.csproj.CoreCompileInputs.cache
+C:\Users\40205836844\Desktop\Exercicios\áreas\obj\Debug\netcoreapp2.2\Áreas.AssemblyInfoInputs.cache
+C:\Users\40205836844\Desktop\Exercicios\áreas\obj\Debug\netcoreapp2.2\Áreas.AssemblyInfo.cs
+C:\Users\40205836844\Desktop\Exercicios\áreas\bin\Debug\netcoreapp2.2\Áreas.deps.json
+C:\Users\40205836844\Desktop\Exercicios\áreas\bin\Debug\netcoreapp2.2\Áreas.runtimeconfig.json
+C:\Users\40205836844\Desktop\Exercicios\áreas\bin\Debug\netcoreapp2.2\Áreas.runtimeconfig.dev.json
+C:\Users\40205836844\Desktop\Exercicios\áreas\bin\Debug\netcoreapp2.2\Áreas.dll
+C:\Users\40205836844\Desktop\Exercicios\áreas\bin\Debug\netcoreapp2.2\Áreas.pdb
+C:\Users\40205836844\Desktop\Exercicios\áreas\obj\Debug\netcoreapp2.2\Áreas.dll
+C:\Users\40205836844\Desktop\Exercicios\áreas\obj\Debug\netcoreapp2.2\Áreas.pdb

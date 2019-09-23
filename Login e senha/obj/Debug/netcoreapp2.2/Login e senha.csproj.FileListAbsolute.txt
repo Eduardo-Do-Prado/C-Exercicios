@@ -1,0 +1,11 @@
+C:\Users\40205836844\Desktop\Exercicios\Login e senha\bin\Debug\netcoreapp2.2\Login e senha.deps.json
+C:\Users\40205836844\Desktop\Exercicios\Login e senha\bin\Debug\netcoreapp2.2\Login e senha.runtimeconfig.json
+C:\Users\40205836844\Desktop\Exercicios\Login e senha\bin\Debug\netcoreapp2.2\Login e senha.runtimeconfig.dev.json
+C:\Users\40205836844\Desktop\Exercicios\Login e senha\bin\Debug\netcoreapp2.2\Login e senha.dll
+C:\Users\40205836844\Desktop\Exercicios\Login e senha\bin\Debug\netcoreapp2.2\Login e senha.pdb
+C:\Users\40205836844\Desktop\Exercicios\Login e senha\obj\Debug\netcoreapp2.2\Login e senha.csprojAssemblyReference.cache
+C:\Users\40205836844\Desktop\Exercicios\Login e senha\obj\Debug\netcoreapp2.2\Login e senha.csproj.CoreCompileInputs.cache
+C:\Users\40205836844\Desktop\Exercicios\Login e senha\obj\Debug\netcoreapp2.2\Login e senha.AssemblyInfoInputs.cache
+C:\Users\40205836844\Desktop\Exercicios\Login e senha\obj\Debug\netcoreapp2.2\Login e senha.AssemblyInfo.cs
+C:\Users\40205836844\Desktop\Exercicios\Login e senha\obj\Debug\netcoreapp2.2\Login e senha.dll
+C:\Users\40205836844\Desktop\Exercicios\Login e senha\obj\Debug\netcoreapp2.2\Login e senha.pdb

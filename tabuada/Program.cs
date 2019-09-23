@@ -6,12 +6,13 @@ namespace Tabuada
     {
         static void Main(string[] args)
         {
-            int x;
-
-            for (x = 5; x <= 50; x+=5){
-            Console.WriteLine(x+ " ");
+             for(int i=1; i <=1; i++){
+                for(int j=1; j<=10;j++){
+                    Console.Write($"{j} * {i} = {j*i}\t");
+                }
+                Console.WriteLine();
             }
-        
         }
     }
 }
+            
