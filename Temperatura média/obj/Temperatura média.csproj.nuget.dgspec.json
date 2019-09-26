@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\40205836844\\Desktop\\Exercicios\\vetor\\Vetor.csproj": {}
+    "C:\\Users\\40205836844\\Desktop\\Exercicios\\Temperatura média\\Temperatura média.csproj": {}
   },
   "projects": {
-    "C:\\Users\\40205836844\\Desktop\\Exercicios\\vetor\\Vetor.csproj": {
+    "C:\\Users\\40205836844\\Desktop\\Exercicios\\Temperatura média\\Temperatura média.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\40205836844\\Desktop\\Exercicios\\vetor\\Vetor.csproj",
-        "projectName": "Vetor",
-        "projectPath": "C:\\Users\\40205836844\\Desktop\\Exercicios\\vetor\\Vetor.csproj",
+        "projectUniqueName": "C:\\Users\\40205836844\\Desktop\\Exercicios\\Temperatura média\\Temperatura média.csproj",
+        "projectName": "Temperatura média",
+        "projectPath": "C:\\Users\\40205836844\\Desktop\\Exercicios\\Temperatura média\\Temperatura média.csproj",
         "packagesPath": "C:\\Users\\40205836844\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\40205836844\\Desktop\\Exercicios\\vetor\\obj\\",
+        "outputPath": "C:\\Users\\40205836844\\Desktop\\Exercicios\\Temperatura média\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
