@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace McB]onalds
+namespace McBonalds
 {
     class Program
     {
