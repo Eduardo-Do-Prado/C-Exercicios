@@ -4,50 +4,35 @@ using Cliente.Models;
 namespace Byte_Bank {
     class Program {
         static void Main (string[] args) {
-            bool ClienteNaoDesistiu = true;
-            do {
-                System.Console.WriteLine ("=================================================================");
-                System.Console.WriteLine ("                   Seja bem-vindo(a) á Byte-Bank");
-                System.Console.WriteLine ("=================================================================");
+            System.Console.WriteLine ("=================================================================");
+            System.Console.WriteLine ("                   Seja bem-vindo(a) á Byte-Bank");
+            System.Console.WriteLine ("=================================================================");
 
-                System.Console.WriteLine ("Aperte 1 para iniciar o cadastro");
-                System.Console.WriteLine ("Aperte 2 para encerrar o cadastro");
+            System.Console.WriteLine ("Cadastro de clientes");
+            System.Console.WriteLine ();
+            Console.Clear ();
 
-                string OpcaoCliente = Console.ReadLine ();
+            System.Console.WriteLine ("Digite seu nome completo: ");
+            string Nome = Console.ReadLine ();
 
-                switch (OpcaoCliente) {
-                    case "1":
-                        Console.Clear ();
+            System.Console.WriteLine ("Digite seu CPF: ");
+            string CPF = Console.ReadLine ();
 
-                        Usuario usuario = new Usuario ();
+            System.Console.WriteLine ("Digite seu Email: ");
+            string Email = Console.ReadLine ();
 
-                        System.Console.WriteLine ("Digite seu nome completo: ");
-                        usuario.Nome = Console.ReadLine ();
-
-                        System.Console.WriteLine ("Digite seu CPF: ");
-                        usuario.CPF = Console.ReadLine();
-                        
-                        System.Console.WriteLine("Digite seu Email: ");
-                        usuario.Email = Console.ReadLine();
-                        
-                        System.Console.WriteLine("Digite sua senha: ");
-                        usuario.Senha = Console.ReadLine();
-
-
-
-
-
-
-
-                case "0":
-                        ClienteNaoDesistiu = false;
-                        break;
-
-                    default:
-                        System.Console.WriteLine ("Comando Desconhecido");
-                        break;
+            Cliente cliente1 = new Cliente (Nome, CPF, Email);
+            bool trocouSenha = false;
+            do{
+                System.Console.WriteLine("Digite a senha: ");
+                string senha = Console.ReadLine();
+                bool senhaOK = cliente1.Trocasenha(senha);
+                if (!senhaOK){
+                    System.Console.WriteLine("senha nao atende os requisitos");
+                }else{
+                    System.Console.WriteLine("senha trocada com sucesso");
                 }
-            }while (ClienteNaoDesistiu);
+            }while(!trocouSenha);
         }
     }
 }
