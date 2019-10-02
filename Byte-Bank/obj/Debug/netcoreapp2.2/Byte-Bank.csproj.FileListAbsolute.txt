@@ -1,0 +1,4 @@
+C:\Users\40205836844\Desktop\Byte-Bank\obj\Debug\netcoreapp2.2\Byte-Bank.csprojAssemblyReference.cache
+C:\Users\40205836844\Desktop\Byte-Bank\obj\Debug\netcoreapp2.2\Byte-Bank.csproj.CoreCompileInputs.cache
+C:\Users\40205836844\Desktop\Byte-Bank\obj\Debug\netcoreapp2.2\Byte-Bank.AssemblyInfoInputs.cache
+C:\Users\40205836844\Desktop\Byte-Bank\obj\Debug\netcoreapp2.2\Byte-Bank.AssemblyInfo.cs
