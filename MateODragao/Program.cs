@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using MateODragao.Models;
 
 namespace MateODragao {
@@ -160,7 +160,7 @@ namespace MateODragao {
 
                                         System.Console.WriteLine ();
                                         break;
-
+                                
                                     case "2":
                                         jogadorNaoCorreu = false;
                                         System.Console.WriteLine ($"{guerreiro.Sobrenome.ToUpper()}: Meti o pé ");
