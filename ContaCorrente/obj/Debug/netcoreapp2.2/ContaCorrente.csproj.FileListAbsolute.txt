@@ -1,0 +1,11 @@
+C:\Users\40205836844\Desktop\Exercicios\ContaCorrente\bin\Debug\netcoreapp2.2\ContaCorrente.deps.json
+C:\Users\40205836844\Desktop\Exercicios\ContaCorrente\bin\Debug\netcoreapp2.2\ContaCorrente.runtimeconfig.json
+C:\Users\40205836844\Desktop\Exercicios\ContaCorrente\bin\Debug\netcoreapp2.2\ContaCorrente.runtimeconfig.dev.json
+C:\Users\40205836844\Desktop\Exercicios\ContaCorrente\bin\Debug\netcoreapp2.2\ContaCorrente.dll
+C:\Users\40205836844\Desktop\Exercicios\ContaCorrente\bin\Debug\netcoreapp2.2\ContaCorrente.pdb
+C:\Users\40205836844\Desktop\Exercicios\ContaCorrente\obj\Debug\netcoreapp2.2\ContaCorrente.csprojAssemblyReference.cache
+C:\Users\40205836844\Desktop\Exercicios\ContaCorrente\obj\Debug\netcoreapp2.2\ContaCorrente.csproj.CoreCompileInputs.cache
+C:\Users\40205836844\Desktop\Exercicios\ContaCorrente\obj\Debug\netcoreapp2.2\ContaCorrente.AssemblyInfoInputs.cache
+C:\Users\40205836844\Desktop\Exercicios\ContaCorrente\obj\Debug\netcoreapp2.2\ContaCorrente.AssemblyInfo.cs
+C:\Users\40205836844\Desktop\Exercicios\ContaCorrente\obj\Debug\netcoreapp2.2\ContaCorrente.dll
+C:\Users\40205836844\Desktop\Exercicios\ContaCorrente\obj\Debug\netcoreapp2.2\ContaCorrente.pdb
