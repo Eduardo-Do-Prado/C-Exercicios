@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\43442346851\\Documents\\Exercicio\\ByteBank\\ByteBank.csproj": {}
+    "C:\\Users\\40205836844\\Desktop\\Exercicios\\Byte Bank\\ContaCorrente.csproj": {}
   },
   "projects": {
-    "C:\\Users\\43442346851\\Documents\\Exercicio\\ByteBank\\ByteBank.csproj": {
+    "C:\\Users\\40205836844\\Desktop\\Exercicios\\Byte Bank\\ContaCorrente.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\43442346851\\Documents\\Exercicio\\ByteBank\\ByteBank.csproj",
-        "projectName": "ByteBank",
-        "projectPath": "C:\\Users\\43442346851\\Documents\\Exercicio\\ByteBank\\ByteBank.csproj",
-        "packagesPath": "C:\\Users\\43442346851\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\43442346851\\Documents\\Exercicio\\ByteBank\\obj\\",
+        "projectUniqueName": "C:\\Users\\40205836844\\Desktop\\Exercicios\\Byte Bank\\ContaCorrente.csproj",
+        "projectName": "ContaCorrente",
+        "projectPath": "C:\\Users\\40205836844\\Desktop\\Exercicios\\Byte Bank\\ContaCorrente.csproj",
+        "packagesPath": "C:\\Users\\40205836844\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\40205836844\\Desktop\\Exercicios\\Byte Bank\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\43442346851\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\40205836844\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

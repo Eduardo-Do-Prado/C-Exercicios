@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\40205836844\\Desktop\\Exercicios\\ContaCorrente\\ContaCorrente.csproj",
+      "projectUniqueName": "C:\\Users\\40205836844\\Desktop\\Exercicios\\Byte Bank\\ContaCorrente.csproj",
       "projectName": "ContaCorrente",
-      "projectPath": "C:\\Users\\40205836844\\Desktop\\Exercicios\\ContaCorrente\\ContaCorrente.csproj",
+      "projectPath": "C:\\Users\\40205836844\\Desktop\\Exercicios\\Byte Bank\\ContaCorrente.csproj",
       "packagesPath": "C:\\Users\\40205836844\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\40205836844\\Desktop\\Exercicios\\ContaCorrente\\obj\\",
+      "outputPath": "C:\\Users\\40205836844\\Desktop\\Exercicios\\Byte Bank\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
