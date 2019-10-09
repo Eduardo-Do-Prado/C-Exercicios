@@ -73,7 +73,7 @@ namespace ByteBank
             Console.Write("Qual o valor do Saque? ");
             valor = double.Parse(Console.ReadLine());
             if(contaCorrente.Saque(valor)){
-                Console.WriteLine("Saque realizado com sucesso. Retire as notas");
+                Console.WriteLine("Saque realizado com sucesso. Retire as notas abaixo");
             } else {
                 Console.WriteLine("Não foi possivel realizar a operação");
 

@@ -171,7 +171,7 @@ namespace MateODragao {
                                 System.Console.WriteLine ();
                                 System.Console.WriteLine ("Aperte ENTER para posseguir");
                                 Console.ReadLine ();
-                                
+
                             }
                         }
                         /*FIM - TRETA */

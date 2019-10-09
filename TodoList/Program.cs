@@ -41,7 +41,7 @@ namespace TodoList
                         RemoveItem(todoList);
                         break;
                     case 3:
-                        Console.WriteLine("Muito Obrigad, até mais!");
+                        Console.WriteLine("Muito Obrigado, até mais!");
                         break;
                     default:
                         Console.WriteLine("Opção Inválida");
