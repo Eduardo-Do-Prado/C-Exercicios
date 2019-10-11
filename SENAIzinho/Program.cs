@@ -8,7 +8,7 @@ namespace SENAIzinho {
             Aluno[] alunos = new Aluno[100];
             int alunosCadastrados = 0;
             Sala[] salas = new Sala[10];
-            int salasCadastradas = 0;
+            //int salasCadastradas = 0;
             string Opcao;
 
             do {
@@ -41,12 +41,12 @@ namespace SENAIzinho {
 
                         System.Console.WriteLine ("O cadastro foi realizado com sucesso!");
 
-                        System.Console.WriteLine();
+                        System.Console.WriteLine ();
                         System.Console.WriteLine ("Pressione ENTER para retornar ao menu");
                         Console.ReadLine ();
                         Console.Clear ();
-
                         break;
+
                     case "2":
                         System.Console.WriteLine ("A sala foi adicionada ao sistema!");
 
@@ -55,6 +55,7 @@ namespace SENAIzinho {
                         Console.ReadLine ();
                         Console.Clear ();
                         break;
+
                     case "3":
                         System.Console.WriteLine ("Digite o nome do aluno(a): ");
                         aluno.Nome = Console.ReadLine ();
@@ -69,26 +70,36 @@ namespace SENAIzinho {
                         Console.ReadLine ();
                         Console.Clear ();
                         break;
+
                     case "4":
                         System.Console.WriteLine ("Digite o nome completo do aluno(a): ");
                         aluno.Nome = Console.ReadLine ();
 
-                        
                         System.Console.WriteLine ("O aluno(a) foi retirado do sistema");
                         System.Console.WriteLine ();
                         System.Console.WriteLine ("Pressione ENTER para retornar ao menu");
                         Console.ReadLine ();
                         Console.Clear ();
                         break;
+
                     case "5":
+
                         System.Console.WriteLine ();
                         System.Console.WriteLine ("Pressione ENTER para retornar ao menu");
                         Console.ReadLine ();
                         Console.Clear ();
-                        
+
                         break;
+
                     case "6":
-                        
+                        foreach (var item in alunos) {
+                            if (item != null) {System.Console.WriteLine("--------------------------------------------------------------------------------------------------");
+                                System.Console.WriteLine ($"Nome do aluno: {item.Nome}");
+                                System.Console.WriteLine("--------------------------------------------------------------------------------------------------");
+                                Console.Clear ();
+                            }
+                        }
+
                         System.Console.WriteLine ();
                         System.Console.WriteLine ("Pressione ENTER para retornar ao menu");
                         Console.ReadLine ();
@@ -97,6 +108,8 @@ namespace SENAIzinho {
                     default:
                         Console.WriteLine ("Operação encerrada");
                         break;
+
+                        
                 }
             } while (Opcao != "0");
         }
