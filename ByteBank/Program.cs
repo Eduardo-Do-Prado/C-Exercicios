@@ -92,44 +92,43 @@ namespace ByteBank {
             double saque;
             do {
                 Console.Write ("Qual o valor do Saque? ");
-                double valor = double.Parse (Console.ReadLine ());
-                saque = contaCorrente.Saque (valor);
-                if (saque >= 0) {
-                    Console.WriteLine ($"Saldo atual: {saldo}");
-                    System.Console.WriteLine ();
-                    System.Console.WriteLine ("Pressione ENTER para continuar");
-                    Console.ReadLine ();
-                    Console.Clear ();
+                Console.WriteLine ("ByteBank - Saque");
+                Console.WriteLine ($"Bem vindo - {usuario.Nome}");
+                Console.WriteLine ($"Agencia: {contaCorrente.Agencia}   Conta: {contaCorrente.Numero}");
+                Console.WriteLine ($"Saldo: {contaCorrente.Saldo}");
+                Console.Write ("Qual o valor do Saque? ");
+                valor = double.Parse (Console.ReadLine ());
+                if (contaCorrente.Saque (valor)) {
+                    Console.WriteLine ("Saque realizado com sucesso. Retire as notas");
                 } else {
-                    Console.WriteLine ("O saldo não pode ser negativo");
+                    Console.WriteLine ("Não foi possivel realizar a operação");
+
                 }
-            } while (!saqueValido);
+                Console.WriteLine ($"Saldo atual: {contaCorrente.Saldo}");
+                Console.WriteLine ();
+                System.Console.WriteLine ();
+                System.Console.WriteLine ("Pressione ENTER para Continuar");
+                Console.ReadLine ();
+                Console.Clear ();
 
-            Console.WriteLine ($"Saldo atual: {contaCorrente.Saldo}");
-            Console.WriteLine ();
-            System.Console.WriteLine ();
-            System.Console.WriteLine ("Pressione ENTER para Continuar");
-            Console.ReadLine ();
-            Console.Clear ();
+                Cliente cliente2 = new Cliente ("Ronmarinho", "123.456.123-12", "www.com.br");
+                ContaCorrente contaCorrente2 = new ContaCorrente (123, 132, cliente2);
+                Console.WriteLine ("ByteBank - Transferência");
+                Console.WriteLine ($"Bem-vindo - {usuario.Nome}");
+                Console.WriteLine ($"Agência: {contaCorrente.Agencia}   Conta: {contaCorrente.Numero}");
+                Console.WriteLine ($"Saldo origem: {contaCorrente.Saldo}");
+                Console.WriteLine ($"Saldo destino: {contaCorrente2.Saldo}");
+                Console.Write ("Digite o valor da tranferência: ");
+                valor = double.Parse (Console.ReadLine ());
 
-            Cliente cliente2 = new Cliente ("Duds", "123.456.123-12", "www.com.br");
-            ContaCorrente contaCorrente2 = new ContaCorrente (123, 132, cliente2);
-            Console.WriteLine ("ByteBank - Transferência");
-            Console.WriteLine ($"Bem-vindo - {usuario.Nome}");
-            Console.WriteLine ($"Agência: {contaCorrente.Agencia}   Conta: {contaCorrente.Numero}");
-            Console.WriteLine ($"Saldo origem: {contaCorrente.Saldo}");
-            Console.WriteLine ($"Saldo destino: {contaCorrente2.Saldo}");
-            Console.Write ("Digite o valor da tranferência: ");
-            valor = double.Parse (Console.ReadLine ());
-
-            if (contaCorrente.Transferencia (contaCorrente2, valor)) {
                 Console.WriteLine ("Tranferência efetuada com sucesso.");
-            } else {
-                Console.WriteLine ("Operação não pode ser realizada.");
+                if (contaCorrente.Transferencia (contaCorrente2, valor)) { } else {
+                    Console.WriteLine ("Operação não pode ser realizada.");
+                }
+                Console.WriteLine ($"Saldo origem atual: {contaCorrente.Saldo}");
+                Console.WriteLine ($"Saldo destino atual: {contaCorrente2.Saldo}");
+                System.Console.WriteLine ("Operação finalizada");
             }
-            Console.WriteLine ($"Saldo origem atual: {contaCorrente.Saldo}");
-            Console.WriteLine ($"Saldo destino atual: {contaCorrente2.Saldo}");
-            System.Console.WriteLine ("Operação finalizada");
         }
     }
 }
