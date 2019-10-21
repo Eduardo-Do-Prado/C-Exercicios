@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\40205836844\\Desktop\\Exercicios\\Escola De Rock\\Escola De Rock.csproj": {}
+    "C:\\Users\\40205836844\\Desktop\\Exercicios\\Reciclagem\\Reciclagem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\40205836844\\Desktop\\Exercicios\\Escola De Rock\\Escola De Rock.csproj": {
+    "C:\\Users\\40205836844\\Desktop\\Exercicios\\Reciclagem\\Reciclagem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\40205836844\\Desktop\\Exercicios\\Escola De Rock\\Escola De Rock.csproj",
-        "projectName": "Escola De Rock",
-        "projectPath": "C:\\Users\\40205836844\\Desktop\\Exercicios\\Escola De Rock\\Escola De Rock.csproj",
+        "projectUniqueName": "C:\\Users\\40205836844\\Desktop\\Exercicios\\Reciclagem\\Reciclagem.csproj",
+        "projectName": "Reciclagem",
+        "projectPath": "C:\\Users\\40205836844\\Desktop\\Exercicios\\Reciclagem\\Reciclagem.csproj",
         "packagesPath": "C:\\Users\\40205836844\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\40205836844\\Desktop\\Exercicios\\Escola De Rock\\obj\\",
+        "outputPath": "C:\\Users\\40205836844\\Desktop\\Exercicios\\Reciclagem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
