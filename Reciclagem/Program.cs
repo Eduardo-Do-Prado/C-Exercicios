@@ -2,24 +2,16 @@
 using System.Collections.Generic;
 using Reciclagem.Interfaces;
 using Reciclagem.Models;
+using Reciclagem.Enums;
 
-namespace Reciclagem {
 
-    enum ItensEnum : uint {
-        GARRAFA = 1,
-        GARRAFA_PET = 2,
-        GUARDA_CHUVA = 3,
-        LATINHA = 4,
-        PAPELAO = 5,
-        POTE_MANTEIGA = 6
-    }
 
     enum CategoriaEnum : uint {
         INDEFINIDO,
         METAL,
-        ORGANICO,
+        ORGÂNICO,
         PAPEL,
-        PLASTICO,
+        PLÁSTICO,
         VIDRO
     }
 
@@ -106,4 +98,3 @@ namespace Reciclagem {
             return System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase (titulo.Replace ("_", " ").ToLower ());
         }
     }
-}
