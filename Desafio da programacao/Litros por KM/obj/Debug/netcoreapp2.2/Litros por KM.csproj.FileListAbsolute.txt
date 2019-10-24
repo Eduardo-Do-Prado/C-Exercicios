@@ -1,0 +1,11 @@
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Litros por KM\bin\Debug\netcoreapp2.2\Litros por KM.deps.json
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Litros por KM\bin\Debug\netcoreapp2.2\Litros por KM.runtimeconfig.json
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Litros por KM\bin\Debug\netcoreapp2.2\Litros por KM.runtimeconfig.dev.json
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Litros por KM\bin\Debug\netcoreapp2.2\Litros por KM.dll
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Litros por KM\bin\Debug\netcoreapp2.2\Litros por KM.pdb
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Litros por KM\obj\Debug\netcoreapp2.2\Litros por KM.csprojAssemblyReference.cache
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Litros por KM\obj\Debug\netcoreapp2.2\Litros por KM.csproj.CoreCompileInputs.cache
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Litros por KM\obj\Debug\netcoreapp2.2\Litros por KM.AssemblyInfoInputs.cache
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Litros por KM\obj\Debug\netcoreapp2.2\Litros por KM.AssemblyInfo.cs
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Litros por KM\obj\Debug\netcoreapp2.2\Litros por KM.dll
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Litros por KM\obj\Debug\netcoreapp2.2\Litros por KM.pdb

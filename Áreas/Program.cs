@@ -11,7 +11,7 @@ namespace Áreas
             int num3 = 0;
             double total;
             int oper;
-            string fun;
+            string tchau;
 
 
             do{
@@ -77,9 +77,9 @@ namespace Áreas
                 Console.WriteLine("Operação inválida");
                 break;}
                 Console.WriteLine("(1) para ir novamente ou (7) para sair");
-                fun = Console.ReadLine();}
+                tchau = Console.ReadLine();}
 
-            while(fun == "1"); 
+            while(tchau == "1"); 
         }
     }
 }

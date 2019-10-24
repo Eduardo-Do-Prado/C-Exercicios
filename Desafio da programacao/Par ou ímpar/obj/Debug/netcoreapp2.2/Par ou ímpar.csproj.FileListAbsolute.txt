@@ -1,0 +1,11 @@
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Par ou ímpar\bin\Debug\netcoreapp2.2\Par ou ímpar.deps.json
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Par ou ímpar\bin\Debug\netcoreapp2.2\Par ou ímpar.runtimeconfig.json
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Par ou ímpar\bin\Debug\netcoreapp2.2\Par ou ímpar.runtimeconfig.dev.json
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Par ou ímpar\bin\Debug\netcoreapp2.2\Par ou ímpar.dll
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Par ou ímpar\bin\Debug\netcoreapp2.2\Par ou ímpar.pdb
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Par ou ímpar\obj\Debug\netcoreapp2.2\Par ou ímpar.csprojAssemblyReference.cache
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Par ou ímpar\obj\Debug\netcoreapp2.2\Par ou ímpar.csproj.CoreCompileInputs.cache
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Par ou ímpar\obj\Debug\netcoreapp2.2\Par ou ímpar.AssemblyInfoInputs.cache
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Par ou ímpar\obj\Debug\netcoreapp2.2\Par ou ímpar.AssemblyInfo.cs
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Par ou ímpar\obj\Debug\netcoreapp2.2\Par ou ímpar.dll
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Par ou ímpar\obj\Debug\netcoreapp2.2\Par ou ímpar.pdb

@@ -1,0 +1,11 @@
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\0 a 10 impar\bin\Debug\netcoreapp2.2\0 a 10 impar.deps.json
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\0 a 10 impar\bin\Debug\netcoreapp2.2\0 a 10 impar.runtimeconfig.json
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\0 a 10 impar\bin\Debug\netcoreapp2.2\0 a 10 impar.runtimeconfig.dev.json
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\0 a 10 impar\bin\Debug\netcoreapp2.2\0 a 10 impar.dll
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\0 a 10 impar\bin\Debug\netcoreapp2.2\0 a 10 impar.pdb
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\0 a 10 impar\obj\Debug\netcoreapp2.2\0 a 10 impar.csprojAssemblyReference.cache
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\0 a 10 impar\obj\Debug\netcoreapp2.2\0 a 10 impar.csproj.CoreCompileInputs.cache
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\0 a 10 impar\obj\Debug\netcoreapp2.2\0 a 10 impar.AssemblyInfoInputs.cache
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\0 a 10 impar\obj\Debug\netcoreapp2.2\0 a 10 impar.AssemblyInfo.cs
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\0 a 10 impar\obj\Debug\netcoreapp2.2\0 a 10 impar.dll
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\0 a 10 impar\obj\Debug\netcoreapp2.2\0 a 10 impar.pdb

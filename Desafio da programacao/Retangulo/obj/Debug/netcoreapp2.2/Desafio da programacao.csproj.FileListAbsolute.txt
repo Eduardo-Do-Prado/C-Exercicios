@@ -1,0 +1,11 @@
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\bin\Debug\netcoreapp2.2\Desafio da programacao.deps.json
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\bin\Debug\netcoreapp2.2\Desafio da programacao.runtimeconfig.json
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\bin\Debug\netcoreapp2.2\Desafio da programacao.runtimeconfig.dev.json
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\bin\Debug\netcoreapp2.2\Desafio da programacao.dll
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\bin\Debug\netcoreapp2.2\Desafio da programacao.pdb
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\obj\Debug\netcoreapp2.2\Desafio da programacao.csprojAssemblyReference.cache
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\obj\Debug\netcoreapp2.2\Desafio da programacao.csproj.CoreCompileInputs.cache
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\obj\Debug\netcoreapp2.2\Desafio da programacao.AssemblyInfoInputs.cache
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\obj\Debug\netcoreapp2.2\Desafio da programacao.AssemblyInfo.cs
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\obj\Debug\netcoreapp2.2\Desafio da programacao.dll
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\obj\Debug\netcoreapp2.2\Desafio da programacao.pdb
