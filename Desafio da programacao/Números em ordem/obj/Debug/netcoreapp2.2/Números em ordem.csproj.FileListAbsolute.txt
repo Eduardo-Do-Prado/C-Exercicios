@@ -1,0 +1,11 @@
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Números em ordem\bin\Debug\netcoreapp2.2\Números em ordem.deps.json
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Números em ordem\bin\Debug\netcoreapp2.2\Números em ordem.runtimeconfig.json
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Números em ordem\bin\Debug\netcoreapp2.2\Números em ordem.runtimeconfig.dev.json
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Números em ordem\bin\Debug\netcoreapp2.2\Números em ordem.dll
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Números em ordem\bin\Debug\netcoreapp2.2\Números em ordem.pdb
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Números em ordem\obj\Debug\netcoreapp2.2\Números em ordem.csprojAssemblyReference.cache
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Números em ordem\obj\Debug\netcoreapp2.2\Números em ordem.csproj.CoreCompileInputs.cache
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Números em ordem\obj\Debug\netcoreapp2.2\Números em ordem.AssemblyInfoInputs.cache
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Números em ordem\obj\Debug\netcoreapp2.2\Números em ordem.AssemblyInfo.cs
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Números em ordem\obj\Debug\netcoreapp2.2\Números em ordem.dll
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Números em ordem\obj\Debug\netcoreapp2.2\Números em ordem.pdb

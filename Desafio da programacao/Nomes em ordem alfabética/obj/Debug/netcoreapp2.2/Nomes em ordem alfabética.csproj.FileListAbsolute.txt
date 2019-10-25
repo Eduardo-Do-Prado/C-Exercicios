@@ -1,0 +1,11 @@
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Nomes em ordem alfabética\bin\Debug\netcoreapp2.2\Nomes em ordem alfabética.deps.json
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Nomes em ordem alfabética\bin\Debug\netcoreapp2.2\Nomes em ordem alfabética.runtimeconfig.json
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Nomes em ordem alfabética\bin\Debug\netcoreapp2.2\Nomes em ordem alfabética.runtimeconfig.dev.json
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Nomes em ordem alfabética\bin\Debug\netcoreapp2.2\Nomes em ordem alfabética.dll
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Nomes em ordem alfabética\bin\Debug\netcoreapp2.2\Nomes em ordem alfabética.pdb
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Nomes em ordem alfabética\obj\Debug\netcoreapp2.2\Nomes em ordem alfabética.csprojAssemblyReference.cache
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Nomes em ordem alfabética\obj\Debug\netcoreapp2.2\Nomes em ordem alfabética.csproj.CoreCompileInputs.cache
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Nomes em ordem alfabética\obj\Debug\netcoreapp2.2\Nomes em ordem alfabética.AssemblyInfoInputs.cache
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Nomes em ordem alfabética\obj\Debug\netcoreapp2.2\Nomes em ordem alfabética.AssemblyInfo.cs
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Nomes em ordem alfabética\obj\Debug\netcoreapp2.2\Nomes em ordem alfabética.dll
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Nomes em ordem alfabética\obj\Debug\netcoreapp2.2\Nomes em ordem alfabética.pdb
