@@ -12,7 +12,7 @@ namespace triangulo {
                 Console.Clear();
                 Console.WriteLine ("Digite o Tamanho: ");
                 altu = int.Parse (Console.ReadLine ());
-                for (compr = 1; compr <= altu; compr++) {
+                for (compr = altu; compr >= 0; compr = compr - 1) {
                     for (taman = 1; taman <= compr; taman++)
                         Console.Write ("*");
                     Console.Write ("\n");

@@ -1,0 +1,11 @@
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\numero limite\bin\Debug\netcoreapp2.2\numero limite.deps.json
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\numero limite\bin\Debug\netcoreapp2.2\numero limite.runtimeconfig.json
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\numero limite\bin\Debug\netcoreapp2.2\numero limite.runtimeconfig.dev.json
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\numero limite\bin\Debug\netcoreapp2.2\numero limite.dll
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\numero limite\bin\Debug\netcoreapp2.2\numero limite.pdb
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\numero limite\obj\Debug\netcoreapp2.2\numero limite.csprojAssemblyReference.cache
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\numero limite\obj\Debug\netcoreapp2.2\numero limite.csproj.CoreCompileInputs.cache
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\numero limite\obj\Debug\netcoreapp2.2\numero limite.AssemblyInfoInputs.cache
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\numero limite\obj\Debug\netcoreapp2.2\numero limite.AssemblyInfo.cs
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\numero limite\obj\Debug\netcoreapp2.2\numero limite.dll
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\numero limite\obj\Debug\netcoreapp2.2\numero limite.pdb

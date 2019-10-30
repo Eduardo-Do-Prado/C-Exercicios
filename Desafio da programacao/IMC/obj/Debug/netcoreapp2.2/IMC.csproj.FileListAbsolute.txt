@@ -1,0 +1,11 @@
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\IMC\bin\Debug\netcoreapp2.2\IMC.deps.json
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\IMC\bin\Debug\netcoreapp2.2\IMC.runtimeconfig.json
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\IMC\bin\Debug\netcoreapp2.2\IMC.runtimeconfig.dev.json
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\IMC\bin\Debug\netcoreapp2.2\IMC.dll
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\IMC\bin\Debug\netcoreapp2.2\IMC.pdb
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\IMC\obj\Debug\netcoreapp2.2\IMC.csprojAssemblyReference.cache
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\IMC\obj\Debug\netcoreapp2.2\IMC.csproj.CoreCompileInputs.cache
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\IMC\obj\Debug\netcoreapp2.2\IMC.AssemblyInfoInputs.cache
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\IMC\obj\Debug\netcoreapp2.2\IMC.AssemblyInfo.cs
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\IMC\obj\Debug\netcoreapp2.2\IMC.dll
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\IMC\obj\Debug\netcoreapp2.2\IMC.pdb
