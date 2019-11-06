@@ -1,4 +1,6 @@
-﻿using System;
+﻿/*using ZooLogico.Interaces;
+using ZooLogico.Models;*/
+using System;
 using System.Linq;
 
 namespace ZooLogico
@@ -15,10 +17,10 @@ namespace ZooLogico
                 var codigo = 0;
                 Console.Clear();
                 System.Console.WriteLine("===============================");
-                System.Console.WriteLine("|  Bem- vindo ao Zoo Lógico!  |");
+                System.Console.WriteLine("|  Bem-vindo ao ZooLógico!  |");
                 System.Console.WriteLine("===============================");
                 // Gerar os itens do menu de forma automática
-                foreach (var item in Arca.Animais.Values)
+                foreach (var item in Arca.Models.Values)
                 {
                     System.Console.WriteLine($"{"",5}{++codigo}. {item.GetType().Name}");
                 }
@@ -29,7 +31,7 @@ namespace ZooLogico
                 try
                 {
                     var opcaoUsuario = int.Parse(Console.ReadLine());
-                    var animal = Arca.Animais[opcaoUsuario];
+                    var animal = Arca.Models[opcaoUsuario];
                     ClassificarAnimal(animal);
                 }
                 catch (Exception e)
@@ -47,7 +49,7 @@ namespace ZooLogico
             var classe = animal.GetType();
             var @interface = classe.GetInterfaces().FirstOrDefault();
 
-            if ((typeof(IAquatico)).Equals(@interface))
+            if ((typeof(IAquario)).Equals(@interface))
             {
                 System.Console.WriteLine($":::{classe.Name} pode ir para a Piscina:::");
             }
