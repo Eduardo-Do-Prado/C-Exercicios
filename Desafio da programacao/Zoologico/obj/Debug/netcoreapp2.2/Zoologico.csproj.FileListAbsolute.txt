@@ -1,0 +1,4 @@
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Zoologico\obj\Debug\netcoreapp2.2\Zoologico.csprojAssemblyReference.cache
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Zoologico\obj\Debug\netcoreapp2.2\Zoologico.csproj.CoreCompileInputs.cache
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Zoologico\obj\Debug\netcoreapp2.2\Zoologico.AssemblyInfoInputs.cache
+C:\Users\40205836844\Desktop\Exercicios\Desafio da programacao\Zoologico\obj\Debug\netcoreapp2.2\Zoologico.AssemblyInfo.cs
