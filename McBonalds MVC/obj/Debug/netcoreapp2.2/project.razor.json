@@ -2996,6 +2996,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Shared\\HeaderHomePage.cshtml",
+      "TargetPath": "Views\\Shared\\HeaderHomePage.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Cliente\\Login.cshtml",
+      "TargetPath": "Views\\Cliente\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
