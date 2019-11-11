@@ -16,7 +16,6 @@ C:\Users\40205836844\Desktop\Exercicios\McBonalds MVC\obj\Debug\netcoreapp2.2\Mc
 C:\Users\40205836844\Desktop\Exercicios\McBonalds MVC\obj\Debug\netcoreapp2.2\McBonalds MVC.RazorCoreGenerate.cache
 C:\Users\40205836844\Desktop\Exercicios\McBonalds MVC\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
 C:\Users\40205836844\Desktop\Exercicios\McBonalds MVC\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
-C:\Users\40205836844\Desktop\Exercicios\McBonalds MVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
 C:\Users\40205836844\Desktop\Exercicios\McBonalds MVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
 C:\Users\40205836844\Desktop\Exercicios\McBonalds MVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
 C:\Users\40205836844\Desktop\Exercicios\McBonalds MVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
@@ -30,3 +29,6 @@ C:\Users\40205836844\Desktop\Exercicios\McBonalds MVC\obj\Debug\netcoreapp2.2\Mc
 C:\Users\40205836844\Desktop\Exercicios\McBonalds MVC\obj\Debug\netcoreapp2.2\McBonalds MVC.csproj.CopyComplete
 C:\Users\40205836844\Desktop\Exercicios\McBonalds MVC\obj\Debug\netcoreapp2.2\Razor\Views\Cliente\Login.g.cshtml.cs
 C:\Users\40205836844\Desktop\Exercicios\McBonalds MVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\HeaderHomePage.g.cshtml.cs
+C:\Users\40205836844\Desktop\Exercicios\McBonalds MVC\obj\Debug\netcoreapp2.2\Razor\Views\Cadastro\Index.g.cshtml.cs
+C:\Users\40205836844\Desktop\Exercicios\McBonalds MVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Erro.g.cshtml.cs
+C:\Users\40205836844\Desktop\Exercicios\McBonalds MVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Sucesso.g.cshtml.cs
