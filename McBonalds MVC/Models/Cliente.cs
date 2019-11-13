@@ -21,7 +21,7 @@ namespace McBonalds_MVC.Models
             this.Endereco = endereco;
             this.Telefone = telefone;
             this.Senha = senha;
-            this.DataNascimento = dataNascimento;
+            this.DataNascimento = dataNascimento;   
         }
     }
 }
