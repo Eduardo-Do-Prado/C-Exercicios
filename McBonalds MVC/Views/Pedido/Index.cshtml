@@ -1,6 +1,6 @@
 <main>
         <h2>Pede aí, jovem!</h2>
-        <form method="POST" action='@URL.Action("Registrar","Pedido")'>
+        <form method="POST" action='@Url.Action("Registrar","Pedido")'>
             <div>
                 <label for="nome">Nome Completo</label>
                 <br />
@@ -37,10 +37,10 @@
                 </div>
                 <div>
                     <label for="shake">Shake</label>
-                    <select id="shake">
+                    <select id="shake" name="shake">
                         <option value="" disabled selected>Selecione</option>
-                        <option>Chocolate</option>
-                        <option>Biscoito</option>
+                        <option value="Chocolate">Chocolate</option>
+                        <option value="Biscoito">Biscoito</option>
                     </select>
                 </div>
             </div>

@@ -2,7 +2,7 @@ using System.IO;
 using McBonalds_MVC.Models;
 
 namespace McBonalds_MVC.Repositories 
- {
+{
     public class ClienteRepository 
     {
         private const string PATH = "Database/Cliente.csv";

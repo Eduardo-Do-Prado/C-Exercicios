@@ -32,3 +32,4 @@ C:\Users\40205836844\Desktop\Exercicios\McBonalds MVC\obj\Debug\netcoreapp2.2\Ra
 C:\Users\40205836844\Desktop\Exercicios\McBonalds MVC\obj\Debug\netcoreapp2.2\Razor\Views\Cadastro\Index.g.cshtml.cs
 C:\Users\40205836844\Desktop\Exercicios\McBonalds MVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Erro.g.cshtml.cs
 C:\Users\40205836844\Desktop\Exercicios\McBonalds MVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Sucesso.g.cshtml.cs
+C:\Users\40205836844\Desktop\Exercicios\McBonalds MVC\obj\Debug\netcoreapp2.2\Razor\Views\Pedido\Index.g.cshtml.cs

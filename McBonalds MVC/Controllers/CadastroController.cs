@@ -22,7 +22,8 @@ namespace McBonalds_MVC.Controllers
 
             clienteRepositorio.Inserir(cliente);
             return View("Sucesso");
-            }catch(Exception e){
+            }catch (Exception)
+            {
                 return View ("Erro"); 
             }
         }
