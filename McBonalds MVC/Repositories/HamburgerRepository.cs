@@ -5,30 +5,45 @@ using McBonalds_MVC.Models;
 
 namespace McBonalds_MVC.Repositories
 {
-    public class HamburgerRepository
+    public class HamburguerRepository
     {
-        private const string PATH = "Database/Hamburger.csv";
+        private const string PATH = "Database/Hamburguer.csv";
 
-        public HamburgerRepository()
+        public HamburguerRepository()
         {
             if(!File.Exists(PATH))
             {
                 File.Create(PATH).Close();
             }
         }
-        public List<Hamburger> ObterTodos()
+
+        public double ObterPrecoDe(string nomeHamburguer)
         {
-            List<Hamburger> hamburgeres = new List<Hamburger>();
+            var lista = ObterTodos();
+            double preco = 0.0;
+            foreach (var item in lista)
+            {
+                if(item.Nome.Equals(nomeHamburguer))
+                {
+                    preco = item.Preco;
+                    break;
+                }
+            }
+            return preco;
+        }
+        public List<Hamburguer> ObterTodos()
+        {
+            List<Hamburguer> hamburgueres = new List<Hamburguer>();
             string[] linhas = File.ReadAllLines(PATH);
             foreach (var linha in linhas)
             {
-                Hamburger h = new Hamburger();
+                Hamburguer h = new Hamburguer();
                 string[] dados = linha.Split(";");
                 h.Nome = dados [0];
                 h.Preco = double.Parse (dados[1]);
-                hamburgeres.Add(h);
+                hamburgueres.Add(h);
             }
-            return hamburgeres;
+            return hamburgueres;
         }
 
         

@@ -1,13 +1,12 @@
 namespace McBonalds_MVC.Models
 {
-    public class Shake : Produto
+    public class Hamburguer : Produto
     {
-        public Shake ()
+        public Hamburguer()
         {
 
         }
-
-        public Shake(string nome, double preco)
+        public Hamburguer(string nome, double preco)
         {
             this.Nome = nome;
             this.Preco = preco;

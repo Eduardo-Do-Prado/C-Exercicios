@@ -1,44 +1,52 @@
 using System;
 using McBonalds_MVC.Models;
 using McBonalds_MVC.Repositories;
+using McBonalds_MVC.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace McBonalds_MVC.Controllers {
     public class PedidoController : Controller {
 
-        PedidoRepository pedidoRepository = new PedidoRepository();
-        HamburgerRepository hamburgerRepository = new HamburgerRepository();
+        PedidoRepository pedidoRepository = new PedidoRepository ();
+        HamburguerRepository hamburguerRepository = new HamburguerRepository ();
+        ShakeRepository shakeRepository = new ShakeRepository();
         public IActionResult Index () {
-            var hamburgers = hamburgerRepository.ObterTodos();
-            
-            return View ();
+            var hamburgueres = hamburguerRepository.ObterTodos ();
+            PedidoViewModel pedido = new PedidoViewModel();
+            pedido.Hamburgueres = hamburgueres;
+
+            var shake = shakeRepository.ObterTodos ();
+            pedido.Shakes = shake;
+
+            return View (pedido);
         }
         public IActionResult Registrar (IFormCollection form) {
             Pedido pedido = new Pedido ();
 
             Shake shake = new Shake ();
             shake.Nome = form["shake"];
-            shake.Preco = 0.0;
+            shake.Preco = 0.0 ;
+
             pedido.Shake = shake;
 
-            Hamburger hamburger = new Hamburger (form["hamburger"], 0.0);
+            var nomeHamburguer = form["hamburguer"];
+            Hamburguer hamburguer = new Hamburguer (nomeHamburguer, hamburguerRepository.ObterPrecoDe(nomeHamburguer));
 
-            pedido.Hamburger = hamburger;
+            pedido.Hamburguer = hamburguer;
 
             Cliente cliente = new Cliente () {
                 Nome = form["Nome"],
                 Endereco = form["endereco"],
                 Telefone = form["telefone"],
                 Email = form["email"]
-
             };
 
             pedido.Cliente = cliente;
 
             pedido.DataDoPedido = DateTime.Now;
 
-            pedido.PrecoTotal = 0.0;
+            pedido.PrecoTotal = hamburguer.Preco + shake.Preco;
 
             pedidoRepository.Inserir (pedido);
 
