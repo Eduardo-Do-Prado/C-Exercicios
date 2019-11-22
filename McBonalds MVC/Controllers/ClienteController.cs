@@ -1,23 +1,25 @@
 using System;
+using McBonalds_MVC.Models;
 using McBonalds_MVC.Repositories;
+using McBonalds_MVC.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace McBonalds_MVC.Controllers {
     public class ClienteController : Controller {
+        private const string SESSION_CLIENTE_EMAIL = "email";
+        private ClienteRepository clienteRepository = new ClienteRepository ();
+        private PedidoRepository pedidoRepository = new PedidoRepository ();
 
-        public ClienteRepository clienteRepository = new ClienteRepository();
-        [HttpPost]
-        public IActionResult Login() 
-        {
+        [HttpGet]
+        public IActionResult Login () {
             return View ();
         }
 
         [HttpPost]
-        public IActionResult Login(IFormCollection form) {
+        public IActionResult Login (IFormCollection form) {
             ViewData["Action"] = "Login";
-            try 
-            {
+            try {
                 System.Console.WriteLine ("===================");
                 System.Console.WriteLine (form["email"]);
                 System.Console.WriteLine (form["senha"]);
@@ -25,16 +27,32 @@ namespace McBonalds_MVC.Controllers {
                 var usuario = form["email"];
                 var senha = form["senha"];
 
-                clienteRepository.ObterPor(usuario);
+                var cliente = clienteRepository.ObterPor (usuario);
 
-                return View("Sucesso");
-            } 
-            catch (Exception e) 
-            {
+                if (cliente != null) {
+                    if (cliente.Senha.Equals (senha)) {
+                        HttpContext.Session.SetString (SESSION_CLIENTE_EMAIL, usuario);
+                        HttpContext.Session.SetString ("SESSION_CLIENTE_NOME", cliente.Nome);
+                        return RedirectToAction ("Historico", "Cliente");
+                    } else {
+                        return View ("Erro", new RespostaViewModel ("Senha incorreta"));
+                    }
+
+                } else {
+                    return View ("Erro", new RespostaViewModel ($"Usuário {usuario} não foi encontrado"));
+                }
+            } catch (Exception e) {
                 System.Console.WriteLine (e.StackTrace);
-                return View("Se fodeu neguin");
+                return View ("Deu Ruim!!!");
             }
-
+        }
+        public IActionResult Historico () {
+            var emailCliente = HttpContext.Session.GetString(SESSION_CLIENTE_EMAIL);
+            var pedidos = pedidoRepository.ObterTodosPorCliente (emailCliente);
+            return View(new HistoricoViewModel ()
+            {
+                Pedidos = pedidos 
+            });
         }
     }
 }
