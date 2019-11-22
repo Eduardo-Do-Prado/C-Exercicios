@@ -42,7 +42,7 @@ namespace McBonalds_MVC.Repositories
         }
         private string PreparaRegistroCSV (Cliente cliente) 
         {
-            return $"nome={cliente.Nome}; email={cliente.Email}; senha={cliente.Senha}; endereco={cliente.Endereco}; telefone={cliente.Telefone}; data_nascimento={cliente.DataNascimento}";
+            return $"nome={cliente.Nome};email={cliente.Email};senha={cliente.Senha};endereco={cliente.Endereco};telefone={cliente.Telefone};data_nascimento={cliente.DataNascimento}";
         }
 
         public string ExtrairValorDoCampo(string nomeCampo, string linha)

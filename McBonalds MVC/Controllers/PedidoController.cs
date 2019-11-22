@@ -6,32 +6,42 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace McBonalds_MVC.Controllers {
-    public class PedidoController : Controller {
+    public class PedidoController : AbstractController {
 
         PedidoRepository pedidoRepository = new PedidoRepository ();
         HamburguerRepository hamburguerRepository = new HamburguerRepository ();
-        ShakeRepository shakeRepository = new ShakeRepository();
+        ShakeRepository shakeRepository = new ShakeRepository ();
+        ClienteRepository clienteRepository = new ClienteRepository();
         public IActionResult Index () {
-            var hamburgueres = hamburguerRepository.ObterTodos ();
-            PedidoViewModel pedido = new PedidoViewModel();
-            pedido.Hamburgueres = hamburgueres;
+            PedidoViewModel pvm = new PedidoViewModel ();
+            pvm.Hamburgueres = hamburguerRepository.ObterTodos ();
+            pvm.Shakes = shakeRepository.ObterTodos ();
 
-            var shake = shakeRepository.ObterTodos ();
-            pedido.Shakes = shake;
+            var usuariologado = ObterUsuarioSession ();
+            var nomeUsuarioLogado = ObterUsuarioNomeSession();
+            if (!string.IsNullOrEmpty(nomeUsuarioLogado))
+            {
+                pvm.NomeUsuario = nomeUsuarioLogado;
+            }
+            var clientelogado = clienteRepository.ObterPor(usuariologado);
+            if (clientelogado != null)
+            {
+                pvm.Cliente = clientelogado; 
+            }
 
-            return View (pedido);
+            return View (pvm);
         }
         public IActionResult Registrar (IFormCollection form) {
             Pedido pedido = new Pedido ();
 
             Shake shake = new Shake ();
             shake.Nome = form["shake"];
-            shake.Preco = 0.0 ;
+            shake.Preco = 0.0;
 
             pedido.Shake = shake;
 
             var nomeHamburguer = form["hamburguer"];
-            Hamburguer hamburguer = new Hamburguer (nomeHamburguer, hamburguerRepository.ObterPrecoDe(nomeHamburguer));
+            Hamburguer hamburguer = new Hamburguer (nomeHamburguer, hamburguerRepository.ObterPrecoDe (nomeHamburguer));
 
             pedido.Hamburguer = hamburguer;
 

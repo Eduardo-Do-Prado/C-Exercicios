@@ -61,7 +61,7 @@ namespace McBonalds_MVC.Repositories
             Cliente cliente = pedido.Cliente;
             Hamburguer hamburguer = pedido.Hamburguer;
             Shake shake = pedido.Shake;
-            return $"nome={cliente.Nome};endereco={cliente.Endereco};telefone={cliente.Telefone};email={cliente.Email};hamburguer_nome={hamburguer.Nome};hamburguer_preco={hamburguer.Preco};shake_nome={shake.Nome};shake_preco={shake.Preco};data_pedido={pedido.DataDoPedido};preco_total={pedido.PrecoTotal}";
+            return $"cliente_nome={cliente.Nome};cliente_endereco={cliente.Endereco};cliente_telefone={cliente.Telefone};cliente_email={cliente.Email};hamburguer_nome={hamburguer.Nome};hamburguer_preco={hamburguer.Preco};shake_nome={shake.Nome};shake_preco={shake.Preco};data_pedido={pedido.DataDoPedido};preco_total={pedido.PrecoTotal}";
         }
         public string ExtrairValorDoCampo(string nomeCampo, string linha)
         {
@@ -69,7 +69,7 @@ namespace McBonalds_MVC.Repositories
             var indiceChave = linha.IndexOf(chave);  
 
             var indiceTerminal = linha.IndexOf(";", indiceChave);
-            var valor = " ";
+            var valor = "";
 
             if(indiceTerminal != -1)
             {
