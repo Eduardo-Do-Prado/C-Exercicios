@@ -28,6 +28,13 @@ namespace McBonalds_MVC.Controllers {
             {
                 pvm.Cliente = clientelogado; 
             }
+            var NomeUsuario = ObterUsuarioNomeSession();
+            if (!string.IsNullOrEmpty(NomeUsuario))
+            {
+                pvm.NomeCliente = NomeUsuario;
+            }
+            pvm.Nomeview = "Pedido";
+            pvm
 
             return View (pvm);
         }

@@ -12,7 +12,11 @@ namespace McBonalds_MVC.Controllers {
 
         [HttpGet]
         public IActionResult Login () {
-            return View ();
+            return View(new BaseViewModel(){
+                NomeView = "Home",
+                UsuarioNome = ObterUsuarioNomeSession(),
+                UsuarioEmail = ObterUsuarioSession()
+            });
         }
 
         [HttpPost]
@@ -50,8 +54,18 @@ namespace McBonalds_MVC.Controllers {
             var pedidos = pedidoRepository.ObterTodosPorCliente (emailCliente);
             return View(new HistoricoViewModel ()
             {
-                Pedidos = pedidos 
+                Pedidos = pedidos,
+                NomeView = "Histórico",
+                UsuarioNome = ObterUsuarioNomeSession(),
+                UsuarioEmail = ObterUsuarioSession()
             });
+        }
+
+        public IActionResult Logoff(){
+            HttpContext.Session.Remove(SESSION_CLIENTE_EMAIL);
+            HttpContext.Session.Remove(SESSION_CLIENTE_NOME);
+            HttpContext.Session.Clear();
+            return RedirectToAction("Index", "Home");
         }
     }
 }
