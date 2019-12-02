@@ -3016,6 +3016,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\40205836844\\Desktop\\Exercicios\\McBonalds MVC\\Views\\Administrador\\Dashboard.cshtml",
+      "TargetPath": "Views\\Administrador\\Dashboard.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\40205836844\\Desktop\\Exercicios\\McBonalds MVC\\Views\\Cliente\\Historico.cshtml",
       "TargetPath": "Views\\Cliente\\Historico.cshtml",
       "FileKind": "mvc"
