@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Role Top</title>
+    <link href="img/logo.png" rel="icon" type="image/x-icon" />
+    <link href="" rel="stylesheet">
+    <link href="" rel="stylesheet">
+    <link href="style cadastro.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+    <title>Principal</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="section-container">
+                    <ul>
+                        <img id="Logo" src="img/logo.png" alt="Logotipo" title="Logo" >
+                        <li id="bt-mobile-menu">
+                            <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </li>                        
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="Role top.html" class="active">Principal</a></li>
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="feedback.html">Feedback</a></li>
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="espaco.html">Espaço</a></li>
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="Orçamento.html">Orçamento</a></li>
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="login.html">Login </a></li>
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="cadastro.html">Cadastre-se</a></li>
+                    </ul>
+            </div>   
+        </nav>
+    </header>
+
+    <main>
+
+<div class="section-container">
+    <div class="content">
+        
+            <form method="post" action="">
+
+                <section id="Cadastro"> 
+
+                        <h1>Cadastro</h1>
+
+                <section id="Nome">
+                <p><input id="nome" name="nome" required="required" type="text" placeholder="Nome completo" /></p>
+                </section>
+                
+                <section id="email">
+                <p><input id="email" name="email" required="required" type="email" placeholder="E-mail" /></p>
+                </section>
+
+                <section id="telefone">
+                <p><input id="telefone" name="Telefone" required="required" type="number" placeholder="Telefone" maxlength="3" /></p>
+                </section>
+
+                <section id="CPF">
+                <p><input id="CPF" name="CPF" required="required" type="number"
+                            placeholder="CPF ou CNPJ" /></p>
+                </section>
+
+                <section id="Data">
+                <p><input id="date" name="Telefone" required="required" type="date"
+                            placeholder="Data de nascimento" /></p>
+                
+                <section id="senha">
+                            <p><input id="senha" name="senha" required="required" type="password"
+                                placeholder="Senha" /></p>
+                </section>
+
+                <p><input id="senha" name="senha" required="required" type="password"
+                                placeholder="Confirmar Senha" /></p>
+
+                <section id="termos">
+                    <label><input type="checkbox" checked="checked" name="Termos"> Li e concordo com os termos de uso.</label></section>
+                        
+                    <section id="enviar">
+                            <p><bold><a href="login.html">Cadastrar</a></p>
+                            </section>
+                
+                <section id="loga">
+                <p class="link">Já tem conta?<a href="login.html"> Ir para <ins>Login</ins> </a> 
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+                </section>
+
+    </main>
+    <script>
+            function toggleMobileMenu() {
+                var ul = document.querySelector("nav ul");
+                var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+                var icon = document.querySelector(".icon > i");
+    
+                ul.classList.toggle("mobile-mode");
+    
+                if (icon.classList.contains("fa-bars")) {
+                    icon.classList.remove("fa-bars");
+                    icon.classList.remove("fa");
+    
+                    icon.classList.add("fas");
+                    icon.classList.add("fa-skull");
+                } else {
+                    icon.classList.remove("fas");
+                    icon.classList.remove("fa-skull");
+    
+                    icon.classList.add("fa");
+                    icon.classList.add("fa-bars");
+                }
+    
+                for (var button of commonButtons) {
+                    button.classList.toggle("active");
+                }
+    
+            }
+            
+        </script>
+    <footer>
+            <img id="Logo-footer" src="img/logo.png" alt="Logotipo" title="Logo">                     
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<main>
+
+<div class="section-container">
+    <div class="content">
+
+                <form method="POST" action='@Url.Action("Login", "Cliente")'>
+
+                    <section id="Login"> 
+
+                        <h1>Login</h1>
+        
+                        <section id="Nome">
+                                    <p><input id="nome" name="nome" required="required" type="text" placeholder="CPF ou E-mail" /></p>
+                        </section>
+                        <section id="senha">
+                                    <p><input id="senha" name="senha" required="required" type="password" placeholder="Senha" /></p> 
+                        </section>
+
+                        <section id="enviar">
+                                <p><bold><a>Entrar</a></p>
+                                <input type="submit" value="Entrar!"/> 
+                        </section>   
+                        
+                        <p class="link">Não possui conta?<a action='@Url.Action("Index", "Cadastro")'> Ir para <ins>Cadastro</ins> </a> 
+                        </p>
+                        <section id="adm.">
+                        <p class="link"><a href="adm. login.html"> login para adm..............................</a></P> 
+                        
+                    </section>        
+                </form>
+            </div>
+        </div>
+            
+    </main>

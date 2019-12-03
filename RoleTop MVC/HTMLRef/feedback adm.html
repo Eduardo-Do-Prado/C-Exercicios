@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Role Top</title>
+    <link href="img/logo.png" rel="icon" type="image/x-icon" />
+    <link href="" rel="stylesheet">
+    <link href="" rel="stylesheet">
+    <link href="style feedback.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+    <title>Principal</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="section-container">
+                    <ul>
+                        <img id="Logo" src="img/logo.png" alt="Logotipo" title="Logo" >
+                        <li id="bt-mobile-menu">
+                            <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </li>                        
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="logado-home.html" class="active">Principal</a></li> 
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="logado-home.html#sobre">Sobre Nós</a><li> 
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="feedback logado.html">Feedback</a></li>
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="espaco.html">Espaço</a></li> 
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="logado-home.html#agenda">Agenda</a></li> 
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="Role top.html">Log Out<img id="user" src="img/user.png"></a></li>
+                    </ul>
+            </div>   
+        </nav>
+    </header>
+
+    <main>
+
+<div class="section-container">
+    <div class="content">
+            
+
+            
+        <h1>faq</h1>
+
+        <section id="Faq">
+
+        <h2>Pergunta</h2>
+        <p>blancdsjcndskjndkcjwenc hiwbfe jcwbemfewm</p>
+
+        <h2>Resposta</h2>
+        <p>svnkshbcjaklnck\aejwbhfkyuerjfvajwfbweyuewabjjhcbhjerfbwkej</p>
+        </section>
+
+        <section id="obs"><p>Adicione sua pergunta<input id="obs" name="Observações" required="required" type="text" placeholder="Comentários adicionais" /></p>
+        </section>
+
+        <section id="enviar">
+                <p><bold><a href="logado-home.html">Enviar pergunta</a></p>
+        </section>
+
+        <section id="Opiniao">
+
+        <h1>opiniOes dos usuários</h1>
+
+        <h2>Usuário</h2>
+        <p>blancdsjcndskjndkcjwenc hiwbfe jcwbemfewmjkwcnwcshcewjbfbcjbhjwebfhjewbfbewhfehfbehwbfhefkwabhewbfhbkb</p>
+        <p>Nota 9/10</p>
+        </section>
+
+        <section id="obs"><p>Adicione sua opinião<input id="obs" name="Observações" required="required" type="text" placeholder="Comentários adicionais" /></p>
+        </section>
+
+        <section id="enviar">
+                <p><bold><a href="logado-home.html">Enviar pergunta</a></p>
+        </section>
+        </div>
+        </main>
+        <script>
+                function toggleMobileMenu() {
+                    var ul = document.querySelector("nav ul");
+                    var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+                    var icon = document.querySelector(".icon > i");
+        
+                    ul.classList.toggle("mobile-mode");
+        
+                    if (icon.classList.contains("fa-bars")) {
+                        icon.classList.remove("fa-bars");
+                        icon.classList.remove("fa");
+        
+                        icon.classList.add("fas");
+                        icon.classList.add("fa-skull");
+                    } else {
+                        icon.classList.remove("fas");
+                        icon.classList.remove("fa-skull");
+        
+                        icon.classList.add("fa");
+                        icon.classList.add("fa-bars");
+                    }
+        
+                    for (var button of commonButtons) {
+                        button.classList.toggle("active");
+                    }
+        
+                }
+                
+            </script>
+        <footer>
+                <img id="Logo-footer" src="img/logo.png" alt="Logotipo" title="Logo">                     
+        </footer>
+    </body>
+</html>

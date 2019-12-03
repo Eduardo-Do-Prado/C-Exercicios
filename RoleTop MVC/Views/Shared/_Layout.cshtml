@@ -1,0 +1,93 @@
+﻿@{
+    var nomeView = (string) ViewData["NomeView"];
+}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Role Top</title>
+    <link href="img/logo.png" rel="icon" type="image/x-icon" />
+    <link href="css/Home.css" rel="stylesheet" type="text/css">
+    <title>Principal</title>
+    @if(!"Cadastro".Equals(nomeView))
+    {
+    <link href="~/css/Cadastro.css" rel="stylesheet" type="text/css">                                                                                     //<link href="~/css/style-adm.home.css" rel="stylesheet" type="text/css">    
+                                                                                                                                                           //<link href="~/css/style-adm.login.css" rel="stylesheet" type="text/css"> 
+    }
+    @if(!"Login".Equals(nomeView))
+    {
+        <link href="~/css/Login.css" rel="stylesheet" type="text/css"> 
+    }
+    @if(!"Espaco".Equals(nomeView))
+    {
+        <link href="~/css/Espaco.css" rel="stylesheet" type="text/css">
+    }
+    @if(!"Feedback".Equals(nomeView))
+    {
+        <link href="~/css/Feedback.css" rel="stylesheet" type="text/css">
+    }
+    @if(!"Orcamento".Equals(nomeView))
+    {
+        <link href="~/css/Orcamento.css" rel="stylesheet" type="text/css">
+    }
+
+    <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="section-container">
+                <ul>
+                    <img id="Logo" src="img/logo.png" alt="Logotipo" title="Logo">
+                    <li id="bt-mobile-menu">
+                        <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Home" asp-action="Index" class="active">Principal</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="feedback.html">Feedback</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="espaco.html">Espaço</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="Orçamento.html">Orçamento</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Login" asp-action="Index">Login </a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cadastro" asp-action="Index">Cadastre-se</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+@RenderBody()
+    <footer>
+        <img id="Logo-footer" src="img/logo.png" alt="Logotipo" title="Logo">
+    </footer>
+    <script>
+        function toggleMobileMenu() {
+            var ul = document.querySelector("nav ul");
+            var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+            var icon = document.querySelector(".icon > i");
+
+            ul.classList.toggle("mobile-mode");
+
+            if (icon.classList.contains("fa-bars")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.remove("fa");
+
+                icon.classList.add("fas");
+                icon.classList.add("fa-skull");
+            } else {
+                icon.classList.remove("fas");
+                icon.classList.remove("fa-skull");
+
+                icon.classList.add("fa");
+                icon.classList.add("fa-bars");
+            }
+
+            for (var button of commonButtons) {
+                button.classList.toggle("active");
+            }
+
+        }
+    </script>
+</body>
+</html>

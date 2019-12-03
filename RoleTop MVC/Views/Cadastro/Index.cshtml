@@ -1,0 +1,51 @@
+<main>
+<div class="section-container">
+    <div class="content">
+        
+            <form method="POST" action='@Url.Action("CadastrarCliente", "Cadastro")'>
+
+                <section id="Cadastro"> 
+
+                        <h1>Cadastro</h1>
+
+                <section id="Nome">
+                <p><input id="nome" name="nome" type="text" maxlength="20" minlength="1" placeholder="Nome completo" /></p>
+                </section>
+                
+                <section id="email">
+                <p><input id="email" name="email" type="email" maxlength="20" minlength="1" placeholder="E-mail" /></p>
+                </section>
+
+                <section id="telefone">
+                <p><input id="telefone" name="telefone" type="number" maxlength="20" minlength="1" placeholder="Telefone" maxlength="3" /></p>
+                </section>
+
+                <section id="CPF">
+                <p><input id="CPF" name="cpf"  type="number" maxlength="20" minlength="1" placeholder="CPF ou CNPJ" /></p>
+                </section>
+
+                <section id="Data">
+                <p><input id="date" name="data-nascimento"  type="date" placeholder="Data de nascimento" /></p>
+                </section>
+                
+                <section id="senha">
+                            <p><input id="senha" name="senha"  type="password" maxlength="20" minlength="1"
+                                placeholder="Senha" /></p>
+                </section>
+                <section id="termos">
+                    
+                    <label><input type="checkbox" checked="checked" name="Termos"> Li e concordo com os termos de uso.</label></section>
+                        
+                    <section id="enviar">
+                            <p><input type="submit" value="Finalizar cadastro" />Cadastrar</p>
+                            </section>
+                
+                <div id="loga">
+                <a action='@Url.Action("Index", "Login")'> Ir para Login</a> 
+            </form>
+        </div>
+    </div>
+</div>
+                </section>
+
+    </main>
