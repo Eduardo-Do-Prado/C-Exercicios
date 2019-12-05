@@ -10,12 +10,12 @@ namespace RoleTop_MVC.Controllers {
         ClienteRepositorio clienteRepositorio = new ClienteRepositorio ();
         public IActionResult Index ()
         {
-            return View  (/*new BaseViewModel() 
+            return View  (new BaseViewModel() 
             {
                 NomeView = "Cadastro",
-                UsuarioEmail = ObterUsuarioSession (),
-                UsuarioNome = ObterUsuarioNomeSession ()
-            }*/);
+                /*UsuarioEmail = ObterUsuarioSession (),
+                UsuarioNome = ObterUsuarioNomeSession ()*/
+            });
         }
 
         public IActionResult CadastrarCliente (IFormCollection form) {

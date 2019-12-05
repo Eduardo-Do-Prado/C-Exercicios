@@ -11,15 +11,15 @@ namespace RoleTop_MVC.Controllers {
 
         [HttpGet]
         public IActionResult Login () {
-            return View (/* new BaseViewModel () {
+            return View ( new BaseViewModel () {
                 NomeView = "Login",
-                    UsuarioEmail = ObterUsuarioSession (),
-                    UsuarioNome = ObterUsuarioNomeSession ()
-            }*/);
+                    /* UsuarioEmail = ObterUsuarioSession (),
+                    UsuarioNome = ObterUsuarioNomeSession ()*/
+            });
         }
 
         [HttpPost]
-        public IActionResult Login (IFormCollection form) {
+        public IActionResult Logar (IFormCollection form) {
             ViewData["Action"] = "Login";
             try {
                 System.Console.WriteLine ("==========================");
