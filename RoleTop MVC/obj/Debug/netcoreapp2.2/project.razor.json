@@ -2961,6 +2961,11 @@
   "RootNamespace": "RoleTop_MVC",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\40205836844\\Desktop\\Exercicios\\RoleTop MVC\\Views\\Feedback\\Index.cshtml",
+      "TargetPath": "Views\\Feedback\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\40205836844\\Desktop\\Exercicios\\RoleTop MVC\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -2971,8 +2976,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\40205836844\\Desktop\\Exercicios\\RoleTop MVC\\Views\\Orcamento\\Index.cshtml",
+      "TargetPath": "Views\\Orcamento\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\40205836844\\Desktop\\Exercicios\\RoleTop MVC\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\40205836844\\Desktop\\Exercicios\\RoleTop MVC\\Views\\Espaco\\Index.cshtml",
+      "TargetPath": "Views\\Espaco\\Index.cshtml",
       "FileKind": "mvc"
     },
     {

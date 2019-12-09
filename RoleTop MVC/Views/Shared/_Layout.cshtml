@@ -1,6 +1,4 @@
-﻿@{
-    var nomeView = (string) ViewData["NomeView"];
-}
+﻿@model RoleTop_MVC.ViewModels.BaseViewModel
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -14,28 +12,13 @@
     <title>Principal</title>
 
 
-    @if("Cadastro".Equals(nomeView))
+    @if(!"Home".Equals(@Model.NomeView))
     {
-    <link href="~/css/Cadastro.css" rel="stylesheet" type="text/css">
+    <link href="~/css/PaginasSecundarias.css" rel="stylesheet" type="text/css">
     
     //<link href="~/css/style-adm.login.css" rel="stylesheet" type="text/css">//<link href="~/css/style-adm.home.css" rel="stylesheet" type="text/css">
     }
-    @if("Login".Equals(nomeView))
-    {
-    <link href="~/css/Login.css" rel="stylesheet" type="text/css">
-    }
-    @if("Espaco".Equals(nomeView))
-    {
-        //<link href="~/css/Espaco.css" rel="stylesheet" type="text/css">
-    }
-    @if("Feedback".Equals(nomeView))
-    {
-        //<link href="~/css/Feedback.css" rel="stylesheet" type="text/css">
-    }
-    @if("Orcamento".Equals(nomeView))
-    {
-        //<link href="~/css/Orcamento.css" rel="stylesheet" type="text/css">
-    }
+    
     <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
 </head>
 <body>
@@ -50,9 +33,9 @@
                         </a>
                     </li>
                     <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Home" asp-action="Index" class="active">Principal</a></li>
-                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="feedback.html">Feedback</a></li>
-                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="espaco.html">Espaço</a></li>
-                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="Orçamento.html">Orçamento</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Feedback" asp-action="Index">Feedback</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Espaco" asp-action="Index">Espaço</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Orcamento" asp-action="Index">Orçamento</a></li>
                     <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cliente" asp-action="Login">Login </a></li>
                     <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cadastro" asp-action="Index">Cadastre-se</a></li>
                 </ul>

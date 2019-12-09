@@ -65,3 +65,6 @@ C:\Users\40205836844\Desktop\Exercicios\RoleTop MVC\obj\Debug\netcoreapp2.2\Role
 C:\Users\40205836844\Desktop\Exercicios\RoleTop MVC\obj\Debug\netcoreapp2.2\RoleTop MVC.pdb
 C:\Users\40205836844\Desktop\Exercicios\RoleTop MVC\obj\Debug\netcoreapp2.2\RoleTop MVC.csproj.CopyComplete
 C:\Users\40205836844\Desktop\Exercicios\RoleTop MVC\obj\Debug\netcoreapp2.2\Razor\Views\Cliente\Login.g.cshtml.cs
+C:\Users\40205836844\Desktop\Exercicios\RoleTop MVC\obj\Debug\netcoreapp2.2\Razor\Views\Espaco\Index.g.cshtml.cs
+C:\Users\40205836844\Desktop\Exercicios\RoleTop MVC\obj\Debug\netcoreapp2.2\Razor\Views\Feedback\Index.g.cshtml.cs
+C:\Users\40205836844\Desktop\Exercicios\RoleTop MVC\obj\Debug\netcoreapp2.2\Razor\Views\Orcamento\Index.g.cshtml.cs
