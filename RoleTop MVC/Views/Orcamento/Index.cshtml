@@ -1,42 +1,45 @@
-<main>
 
-    <div class="section-container">
+<main>
+<form method="POST" action='@Url.Action("Registrar", "Orcamento")'>
+<div class="section-container">
         <div class="content">
-            <section id="orcamento">
+        <section id="orcamento">
 
                 <h1>OrÇamento</h1>
-            
 
-                <section id="date">
-                        <p> Data do evento<input id="date" name="Data" required="required" type="date"/></p>
+
+                <section id="Nome">
+                        <p> Nome Completo<input id="Nome" name="nome" required="required" type="text" /></p>
+                </section>
+                <section id="Email">
+                        <p> Email<input id="Email" name="email" required="required" type="text" /></p>
+                </section>
+                <section id="Telefone">
+                        <p> Telefone<input id="Telefone" name="telefone" required="required" type="text" /></p>
+                </section>
+                <section id="CPF">
+                        <p> CPF<input id="CPF" name="cpf" required="required" type="text" /></p>
+                </section>
+                <section id="Date">
+                        <p> Data do evento<input id="Date" name="dataEvento" required="required" type="date" /></p>
                 </section>
                 
-                <section id="evento">
-                        <p> Tipo de Evento<input id="evento" name="Tipo de evento" required="required" type="text" placeholder="Digite o tipo de evento" /></p>
+                <section id="Evento">
+                        <p> Tipo de Evento<input id="Evento" name="evento" required="required" type="text" placeholder="Digite o tipo de evento" /></p>
                 </section>
 
-                <section id="pessoas">
-                        <p>Quantidade de pessoas<input id="pessoas" name="Quant. pessoas" required="required" type="number" placeholder="máx. 400" /></p>
+                <section id="Pessoas">
+                        <p>Quantidade de pessoas<input id="Pessoas" name="quantidadePessoas" required="required" type="number" placeholder="máx. 400" /></p>
                 </section>
 
-                <section id="obs"><p>Observações<input id="obs" name="Observações" required="required" type="text" placeholder="Comentários adicionais" /></p>
+                <section id="Obs">
+                        <p>Observações<input id="Obs" maxlength="280" minlength="3" name="observaçao" required="required" type="text" placeholder="Comentários adicionais" /></p>
                 </section>
-
-                <p>Adicionar equipamentos (opcional)</p>
-                <section id="Equipamentos"><p>Luz $$$<input id="Equipamentos" name="Equipamentos" type="checkbox" placeholder="Comentários adicionais" /></p>
-                </section>   
-                
-                <section id="Equipamentos"><p>Som $$$<input id="Equipamentos" name="Equipamentos" type="checkbox" placeholder="Comentários adicionais" /></p>
-                </section> 
-
-                <section id="valor"><p>VALOR:<input id="valor" name="valor" required="required" type="button"/></p>
-                </section>
-
                 <section id="enviar-login">
-                <p><bold><a href="login.html">Finalizar reserva</a></p>
+                <input type="submit" value="Enviar" />
                 </section>
-
-            </section>
+</form>
+                </section>
         </div>
         </div>
-    </main>
+</main>

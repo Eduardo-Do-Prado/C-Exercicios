@@ -1,0 +1,12 @@
+<p>Adicionar equipamentos (opcional)</p>
+                <section id="Equipamentos">
+                    <p>Luz $$$<input id="Equipamentos" name="equipamentos" type="checkbox" placeholder="Comentários adicionais" /></p>
+                </section>   
+                
+                <section id="Equipamentos">
+                    <p>Som $$$<input id="Equipamentos" name="equipamentos" type="checkbox" placeholder="Comentários adicionais" /></p>
+                </section> 
+
+                <section id="Valor">
+                    <p>VALOR:<input id="Valor" name="Valor" required="required" type="button" /></p>
+                </section>

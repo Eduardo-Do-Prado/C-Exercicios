@@ -1,4 +1,6 @@
-﻿@model RoleTop_MVC.ViewModels.BaseViewModel
+﻿@{
+    var nomeView = (string) ViewData["NomeView"];
+}
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -12,7 +14,7 @@
     <title>Principal</title>
 
 
-    @if(!"Home".Equals(@Model.NomeView))
+    @if(!"Home".Equals(nomeView))
     {
     <link href="~/css/PaginasSecundarias.css" rel="stylesheet" type="text/css">
     
