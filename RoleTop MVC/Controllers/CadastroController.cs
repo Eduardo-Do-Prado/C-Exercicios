@@ -2,20 +2,46 @@ using System;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RoleTop_MVC.Models;
-using RoleTop_MVC.Repositorio;
+using RoleTop_MVC.Repositorios;
 using RoleTop_MVC.ViewModels;
 
 namespace RoleTop_MVC.Controllers {
-    public class CadastroController : Controller {
+    public class CadastroController : AbstractController {
         ClienteRepositorio clienteRepositorio = new ClienteRepositorio ();
         public IActionResult Index () {
-            return View();
+            switch(ObterUsuarioNomeSession())
+            {
+                case "":
+                    ClienteViewModel clienteviewmodel = new ClienteViewModel(ObterUsuarioNomeSession());
+                    return View(clienteviewmodel);
+                default:
+                    return RedirectToAction("Index","Home");
+            }
+        }
+        public IActionResult Login()
+        {
+            switch(ObterUsuarioNomeSession())
+            {
+                case "":
+                    ClienteViewModel clienteviewmodel = new ClienteViewModel(ObterUsuarioNomeSession());
+                    return View(clienteviewmodel);
+                default:
+                    return RedirectToAction("Index","Home");
+            }
         }
 
+        [HttpPost]
+        public IActionResult Logar(IFormCollection form)
+        {
+            Cliente cliente = clienteRepositorio.ObterPor(form["Usuario"]);
+
+            HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Usuario);
+            return RedirectToAction("Login","Cliente");
+        }
         public IActionResult CadastrarCliente (IFormCollection form) {
-            ViewData["Action"] = "Cadastro";
             try {
                 Cliente cliente = new Cliente (
+                    form["usuario"],
                     form["nome"],
                     form["email"],
                     form["telefone"],
@@ -24,9 +50,9 @@ namespace RoleTop_MVC.Controllers {
                     form["senha"]);
 
                 clienteRepositorio.Inserir (cliente);
-                return View ("Sucesso");
+                HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Usuario);
+                    return RedirectToAction("Login","Cliente");
             } catch (Exception e) {
-                System.Console.WriteLine (e.StackTrace);
                 return View ("Erro");
             }
         }

@@ -1,0 +1,38 @@
+@model RoleTop_MVC.ViewModels.ClienteViewModel
+
+<main>
+    <section id = dashboard>
+    <h2>Administador</h2>
+    <table>
+        <tr>
+        <th>ID</th>
+        <th>Organizador</th>
+        <th>Dia Do Evento</th>
+        <th>Evento</th>
+        <th>Quantidade de Pessoas</th>
+        <th>Observações</th>
+    </tr>
+
+        @foreach(var evento in @Model.Eventos)
+        {
+        <tr>
+            <td>@evento.ID</td>
+            <td>@evento.Organizador</td>
+            <td>@evento.DataEvento</td>
+            <td>@evento.Evento</td>
+            <td>@evento.QuantidadePessoas</td>
+            <td>Pendente</td>
+            <form method="POST" action='@Url.Action("Aprovar", "Administrador")'>
+                <input type="hidden" name="ID" value=@evento.ID>
+                <td><input type="submit" name="Aprovar" value="Aprovar"></td>
+            </form>
+            <form method="POST" action='@Url.Action("Cancelar", "Administrador")'>
+            <input type="hidden" name="ID" value=@evento.ID>
+                <td><input type="submit" name="Cancelar" value="Cancelar"></td>
+            </form>
+    </tr>
+        }
+    </table>
+    </section>
+
+</main>

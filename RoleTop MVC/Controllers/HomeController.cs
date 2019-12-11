@@ -9,15 +9,12 @@ using RoleTop_MVC.ViewModels;
 
 namespace RoleTop_MVC.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : AbstractController
     {
         public IActionResult Index()
         {
-            ViewData["NomeView"] = "Home";
-            return View(/*new BaseViewModel(){
-                NomeView = "Home",
-                UsuarioEmail = ObterUsuarioSession(),
-                UsuarioNome = ObterUsuarioNomeSession()}*/);
+            ClienteViewModel clienteviewmodel = new ClienteViewModel(ObterUsuarioNomeSession());
+            return View(clienteviewmodel);
         }
 
         public IActionResult Privacy()

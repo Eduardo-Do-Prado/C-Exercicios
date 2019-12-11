@@ -68,3 +68,4 @@ C:\Users\40205836844\Desktop\Exercicios\RoleTop MVC\obj\Debug\netcoreapp2.2\Razo
 C:\Users\40205836844\Desktop\Exercicios\RoleTop MVC\obj\Debug\netcoreapp2.2\Razor\Views\Espaco\Index.g.cshtml.cs
 C:\Users\40205836844\Desktop\Exercicios\RoleTop MVC\obj\Debug\netcoreapp2.2\Razor\Views\Feedback\Index.g.cshtml.cs
 C:\Users\40205836844\Desktop\Exercicios\RoleTop MVC\obj\Debug\netcoreapp2.2\Razor\Views\Orcamento\Index.g.cshtml.cs
+C:\Users\40205836844\Desktop\Exercicios\RoleTop MVC\obj\Debug\netcoreapp2.2\Razor\Views\Administador\Dashboard.g.cshtml.cs

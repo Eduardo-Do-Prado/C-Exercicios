@@ -4,6 +4,7 @@ namespace RoleTop_MVC.Models
 {
     public class Cliente
     {
+        public string Usuario {get;set;}
         public string Nome {get;set;}
         public string Email {get;set;}
         public string Telefone {get;set;}
@@ -14,8 +15,9 @@ namespace RoleTop_MVC.Models
         {
 
         }
-        public Cliente (string nome, string email, string telefone, string cpf, DateTime dataNascimento, string senha)
+        public Cliente (string nome, string usuario, string email, string telefone, string cpf, DateTime dataNascimento, string senha)
         {
+            this.Usuario = usuario;
             this.Nome = nome;
             this.Email = email;
             this.Telefone = telefone;

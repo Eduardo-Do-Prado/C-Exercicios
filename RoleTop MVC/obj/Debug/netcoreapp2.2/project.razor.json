@@ -3029,6 +3029,11 @@
       "FilePath": "c:\\Users\\40205836844\\Desktop\\Exercicios\\RoleTop MVC\\Views\\Cliente\\Login.cshtml",
       "TargetPath": "Views\\Cliente\\Login.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\40205836844\\Desktop\\Exercicios\\RoleTop MVC\\Views\\Administador\\Dashboard.cshtml",
+      "TargetPath": "Views\\Administador\\Dashboard.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"

@@ -1,12 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
+using RoleTop_MVC.ViewModels;
 namespace RoleTop_MVC.Controllers
 {
-    public class EspacoController : Controller
+    public class EspacoController : AbstractController
     {
         public IActionResult Index()
         {
-            ViewData["NomeView"] = "Espaco";
-            return View();
+            ClienteViewModel clienteviewmodel = new ClienteViewModel(ObterUsuarioNomeSession());
+            return View(clienteviewmodel);
         }
     }
 }

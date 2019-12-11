@@ -2,9 +2,9 @@ using System;
 using System.IO;
 using RoleTop_MVC.Models;
 
-namespace RoleTop_MVC.Repositorio 
+namespace RoleTop_MVC.Repositorios 
 {
-    public class ClienteRepositorio 
+    public class ClienteRepositorio : Repositoriobase
     {
         private const string PATH = "Database/Cliente.csv";
         public ClienteRepositorio() 
@@ -20,14 +20,15 @@ namespace RoleTop_MVC.Repositorio
             File.AppendAllLines (PATH, linha);
             return true;
         }
-        /*public Cliente ObterPor (string email) 
+        public Cliente ObterPor (string Usuario) 
         {
             var linhas = File.ReadAllLines (PATH);
             foreach (var linha in linhas) 
             {
-                if (ExtrairValorDoCampo ("email", linha).Equals (email)) 
+                if (ExtrairValorDoCampo ("Usuario", linha)== Usuario) 
                 {
                     Cliente c = new Cliente ();
+                    c.Usuario = ExtrairValorDoCampo("Usuario",linha);
                     c.Nome = ExtrairValorDoCampo ("nome", linha);
                     c.Email = ExtrairValorDoCampo ("email", linha);
                     c.Telefone = ExtrairValorDoCampo ("telefone", linha);
@@ -38,9 +39,9 @@ namespace RoleTop_MVC.Repositorio
                 }
             }
             return null;
-        }*/
+        }
         private string PrepararRegistroCSV (Cliente cliente) {
-            return $"nome={cliente.Nome};email={cliente.Email};telefone={cliente.Telefone};cpf={cliente.CPF};data-nascimento={cliente.DataNascimento};senha={cliente.Senha}";
+            return $"Usuario={cliente.Usuario};nome={cliente.Nome};email={cliente.Email};telefone={cliente.Telefone};cpf={cliente.CPF};data-nascimento={cliente.DataNascimento};senha={cliente.Senha}";
         }
     }
 }

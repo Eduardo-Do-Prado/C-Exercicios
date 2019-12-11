@@ -1,6 +1,7 @@
 ﻿@{
-    var nomeView = (string) ViewData["NomeView"];
+    var NomeView = (string) ViewData["NomeView"];
 }
+@model RoleTop_MVC.ViewModels.ClienteViewModel
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -9,19 +10,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Role Top</title>
+    <link href="css/Home.css" rel="stylesheet" type="text/css">
     <link href="img/logo.png" rel="icon" type="image/x-icon" />
-    <link href="css/Home.css" rel="stylesheet" type="text/css">    
+    <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
     <title>Principal</title>
 
 
-    @if(!"Home".Equals(nomeView))
+    @if(!"Home".Equals(NomeView))
     {
     <link href="~/css/PaginasSecundarias.css" rel="stylesheet" type="text/css">
-    
-    //<link href="~/css/style-adm.login.css" rel="stylesheet" type="text/css">//<link href="~/css/style-adm.home.css" rel="stylesheet" type="text/css">
     }
-    
-    <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+    @if("Home".Equals(NomeView))
+    {
+    //<link href="css/Home.css" rel="stylesheet" type="text/css">
+    }
 </head>
 <body>
     <header>
@@ -38,8 +40,12 @@
                     <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Feedback" asp-action="Index">Feedback</a></li>
                     <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Espaco" asp-action="Index">Espaço</a></li>
                     <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Orcamento" asp-action="Index">Orçamento</a></li>
-                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cliente" asp-action="Login">Login </a></li>
+                    @if(string.IsNullOrEmpty(@Model.Usuario))
+                    {<li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cliente" asp-action="Login">Login </a></li>
                     <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cadastro" asp-action="Index">Cadastre-se</a></li>
+                    }else{
+                    <a asp-controller="Cliente" asp-action="Logoff">Logoff</a>
+                }
                 </ul>
             </div>
         </nav>
