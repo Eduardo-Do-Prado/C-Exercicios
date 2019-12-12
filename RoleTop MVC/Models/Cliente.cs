@@ -11,6 +11,7 @@ namespace RoleTop_MVC.Models
         public string CPF {get;set;} 
         public DateTime DataNascimento {get;set;}
         public string Senha {get;set;}
+        public uint TipoUsuario {get; set;}
         public Cliente ()
         {
 

@@ -1,12 +1,14 @@
 using Microsoft.AspNetCore.Mvc;
+using RoleTop_MVC.ViewModels;
+
 namespace RoleTop_MVC.Controllers
 {
-    public class FeedbackController : Controller
+    public class FeedbackController : AbstractController
     {
         public IActionResult Index()
         {
-            ViewData["NomeView"] = "Feedback";
-            return View();
+            ClienteViewModel clienteviewmodel = new ClienteViewModel(ObterUsuarioNomeSession());
+            return View(clienteviewmodel);
         }
     }
 }

@@ -20,12 +20,12 @@ namespace RoleTop_MVC.Repositorios
             File.AppendAllLines (PATH, linha);
             return true;
         }
-        public Cliente ObterPor (string Usuario) 
+        public Cliente ObterPor (string Email) 
         {
             var linhas = File.ReadAllLines (PATH);
             foreach (var linha in linhas) 
             {
-                if (ExtrairValorDoCampo ("Usuario", linha)== Usuario) 
+                if (ExtrairValorDoCampo ("email", linha)== Email) 
                 {
                     Cliente c = new Cliente ();
                     c.Usuario = ExtrairValorDoCampo("Usuario",linha);

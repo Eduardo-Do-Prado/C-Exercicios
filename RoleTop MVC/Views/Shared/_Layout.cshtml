@@ -10,27 +10,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Role Top</title>
-    <link href="css/Home.css" rel="stylesheet" type="text/css">
-    <link href="img/logo.png" rel="icon" type="image/x-icon" />
+    <link href="~/css/Home.css" rel="stylesheet" type="text/css">
+    <link href="~/img/logo.png" rel="icon" type="image/x-icon" />
     <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
     <title>Principal</title>
 
 
     @if(!"Home".Equals(NomeView))
     {
-    <link href="~/css/PaginasSecundarias.css" rel="stylesheet" type="text/css">
+        <link href="~/css/PaginasSecundarias.css" rel="stylesheet" type="text/css">
     }
-    @if("Home".Equals(NomeView))
-    {
-    //<link href="css/Home.css" rel="stylesheet" type="text/css">
-    }
+    
 </head>
 <body>
     <header>
         <nav>
             <div class="section-container">
                 <ul>
-                    <img id="Logo" src="img/logo.png" alt="Logotipo" title="Logo">
+                    <img id="Logo" src="/img/logo.png" alt="Logotipo" title="Logo">
                     <li id="bt-mobile-menu">
                         <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
                             <i class="fa fa-bars"></i>
@@ -41,18 +38,21 @@
                     <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Espaco" asp-action="Index">Espaço</a></li>
                     <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Orcamento" asp-action="Index">Orçamento</a></li>
                     @if(string.IsNullOrEmpty(@Model.Usuario))
-                    {<li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cliente" asp-action="Login">Login </a></li>
-                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cadastro" asp-action="Index">Cadastre-se</a></li>
-                    }else{
-                    <a asp-controller="Cliente" asp-action="Logoff">Logoff</a>
-                }
+                    {
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cliente" asp-action="Login">Login </a></li>
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cadastro" asp-action="Index">Cadastre-se</a></li>
+                    }
+                    else
+                    {
+                        <a asp-controller="Cliente" asp-action="Logoff">Logoff</a>
+                    }
                 </ul>
             </div>
         </nav>
     </header>
 @RenderBody()
     <footer>
-        <img id="Logo-footer" src="img/logo.png" alt="Logotipo" title="Logo">
+        <img id="Logo-footer" src="/img/logo.png" alt="Logotipo" title="Logo">
     </footer>
     <script>
         function toggleMobileMenu() {

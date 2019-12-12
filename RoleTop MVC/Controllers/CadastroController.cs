@@ -18,22 +18,10 @@ namespace RoleTop_MVC.Controllers {
                     return RedirectToAction("Index","Home");
             }
         }
-        public IActionResult Login()
-        {
-            switch(ObterUsuarioNomeSession())
-            {
-                case "":
-                    ClienteViewModel clienteviewmodel = new ClienteViewModel(ObterUsuarioNomeSession());
-                    return View(clienteviewmodel);
-                default:
-                    return RedirectToAction("Index","Home");
-            }
-        }
-
         [HttpPost]
         public IActionResult Logar(IFormCollection form)
         {
-            Cliente cliente = clienteRepositorio.ObterPor(form["Usuario"]);
+            Cliente cliente = clienteRepositorio.ObterPor(form["email"]);
 
             HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Usuario);
             return RedirectToAction("Login","Cliente");

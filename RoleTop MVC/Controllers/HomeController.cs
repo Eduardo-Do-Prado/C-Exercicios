@@ -16,10 +16,5 @@ namespace RoleTop_MVC.Controllers
             ClienteViewModel clienteviewmodel = new ClienteViewModel(ObterUsuarioNomeSession());
             return View(clienteviewmodel);
         }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
     }
 }
