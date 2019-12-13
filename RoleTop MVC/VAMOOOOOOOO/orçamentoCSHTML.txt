@@ -1,0 +1,64 @@
+<h1>Orçamento</h1>
+            
+            <section id="organizador">
+                <label for="organizador">Organizador</label>
+                <br />
+                <input type="text" name="organizador" required="required">
+            </section>
+
+            <section id="data">
+                <label for="data">Data do evento</label>
+                <br />
+                <input type="text" name="data-evento" required="required">
+            </section>
+
+            <section id="evento">
+                <label for="evento">Evento</label>
+                <br />
+                <input type="text" name="evento" required="required">
+            </section>
+
+            <section id="pessoas">
+                <label for="pessoas">Quantidade de pessoas</label>
+                <br />
+                <input type="text" name="quantidadePessoas" required="required">
+            </section>
+
+            <section id="obs">
+                <label for="obs">Observações</label>
+                <br />
+                <input type="text" name="observacao" required="required">
+            </section>
+                <div>
+                    <label for="som">Som</label>
+                    <select id="som" name="som" required>
+                        <option value="" disabled selected>Adicionar</option>
+                        @foreach (var s in Model.Som)
+                        {
+                            <option value=@s.Nome>@s.Nome por @s.Preco</option>
+                        }
+                    </select>
+                </div>
+                <div>
+                    <label for="iluminacao">Iluminação</label>
+                    <select id="iluminacao" name="iluminacao">
+                        <option value="" disabled selected>Adicionar</option>
+                        @foreach (var i in Model.iluminacao)
+                        {
+                            <option value="@i.Nome">@i.Nome por @i.Preco</option>
+                        }
+                    </select>
+                </div>
+
+            <section id="enviar">
+                    <p><bold><a href="login.html">Finalizar reserva</a></p>
+                    </section>
+
+            
+
+            </section>
+
+        </form>
+    </div>
+</div>
+    </main>

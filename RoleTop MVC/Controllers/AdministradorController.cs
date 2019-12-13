@@ -12,12 +12,12 @@ namespace RoleTop_MVC.Controllers
         {
             switch(ObterUsuarioNomeSession())
             {
-                case "Administrador":
-                    ClienteViewModel clienteviewmodel = new ClienteViewModel(ObterUsuarioNomeSession());
+                case "vdrvgfed@vrdbvd":
+                    ClienteViewModel clienteviewmodel = new ClienteViewModel(ObterUsuarioSession());
                     clienteviewmodel.Eventos = orcamentorepositorio.ObterTodosEventosPendentes();
                     return View(clienteviewmodel);
                 default:
-                    return RedirectToAction("Index","Home");
+                    return RedirectToAction("Dashboard","Administrador");
             }
 
         }

@@ -1,4 +1,5 @@
 using System;
+using Microsoft.Extensions.Primitives;
 
 namespace RoleTop_MVC.Models
 {
@@ -25,6 +26,10 @@ namespace RoleTop_MVC.Models
             this.CPF = cpf;
             this.DataNascimento = dataNascimento;   
             this.Senha = senha;
+        }
+
+        public Cliente(StringValues stringValues)
+        {
         }
     }
 }

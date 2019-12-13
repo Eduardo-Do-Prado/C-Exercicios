@@ -1,38 +1,74 @@
-
+@model RoleTop_MVC.ViewModels.ClienteViewModel
 <main>
 <form method="POST" action='@Url.Action("Registrar", "Orcamento")'>
 <div class="section-container">
         <div class="content">
-        <section id="orcamento">
+        <section id="Orcamento">
 
-                <h1>OrÇamento</h1>
+                <h1>Orçamento</h1>
 
 
-                <section id="organizador">
-                <label for="organizador">Organizador</label>
+                <section id="usuario">
+                <label for="usuario">Organizador</label>
                 <br />
-                <input type="text" name="organizador">
-                </section>
-                <section id="Date">
-                        <p> Data do evento<input id="Date" name="dataEvento" required="required" type="date" /></p>
-                </section>
-                
-                <section id="Evento">
-                        <p> Tipo de Evento<input id="Evento" name="evento" required="required" type="text" placeholder="Digite o tipo de evento" /></p>
-                </section>
+                <input type="text" name="usuario" required="required">
+            </section>
 
-                <section id="Pessoas">
-                        <p>Quantidade de pessoas<input id="Pessoas" name="quantidadePessoas" required="required" type="number" placeholder="máx. 400" /></p>
-                </section>
+            <section id="data">
+                <label for="data">Data do evento</label>
+                <br />
+                <input type="date" name="dataEvento" required="required">
+            </section>
 
-                <section id="Obs">
-                        <p>Observações<input id="Obs" maxlength="280" minlength="3" name="observaçao" required="required" type="text" placeholder="Comentários adicionais" /></p>
-                </section>
+            <section id="evento">
+                <label for="evento">Evento</label>
+                <br />
+                <input type="text" name="evento" required="required">
+            </section>
+
+            <section id="pessoas">
+                <label for="pessoas">Quantidade de pessoas</label>
+                <br />
+                <input type="number" name="quantidadePessoas" required="required">
+            </section>
+
+            <section id="obs">
+                <label for="obs">Observações</label>
+                <br />
+                <input type="text" name="observacao" required="required">
+            </section>
+                <div>
+                    <label for="som">Som</label>
+                    <select id="som" name="som" required>
+                        <option value="" disabled selected>Adicionar</option>
+                        @foreach (var s in Model.Sons)
+                        {
+                            <option value=@s.Tipo>@s.Tipo por @s.Preco</option>
+                        }
+                    </select>
+                </div>
+                <div>
+                    <label for="iluminacao">Iluminação</label>
+                    <select id="iluminacao" name="iluminacao">
+                        <option value="" disabled selected>Adicionar</option>
+                        @foreach (var i in Model.Iluminacoes)
+                        {
+                            <option value="@i.Tipo">@i.Tipo por @i.Preco</option>
+                        }
+                    </select>
+                </div>
+
                 <section id="enviar-login">
-                <input type="submit" value="Enviar" />
+                @if(string.IsNullOrEmpty(@Model.NomeUsuario))
+                {
+                <a href='@Url.Action("Index", "Cadastro")'>Finalizar Orçamento</a>
+                }else
+                {
+                <a type="submit" value="Enviar">Finalizar Orçamento</a>
+                }
                 </section>
+
 </form>
-                </section>
+        </section>
         </div>
-        </div>
-</main>
+</div>

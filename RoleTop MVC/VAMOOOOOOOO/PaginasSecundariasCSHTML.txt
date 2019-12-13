@@ -1,0 +1,488 @@
+/*#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                                                Começo-Nav
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'bayou_cowboyregular';
+    src: url(Bayoc/bayoc___-webfont.woff2) format('woff2'), url(Bayoc/bayoc___-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.section-container {
+    margin: 0 auto;
+    max-width: 1360px;
+}
+
+.section-container>a {
+    display: block;
+    padding: 20px 0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1 {
+    color: #FFC600;
+    text-align: center;
+    font-family: 'bayou_cowboyregular';
+}
+
+nav {
+    background-image: linear-gradient(#ffc600, #4C005A);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#Logo {
+    display: flex;
+    width: 20%;
+    height: 20%;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4C005A;
+    margin: 0;
+    font-size: 100%
+}
+
+nav a.bt-common-menu.active {
+    text-decoration: none;
+    color: #4C005A;
+    font-size: 100%;
+    font-weight: bold
+}
+
+nav a:hover {
+    color: #ffc600;
+    margin: 0;
+    font-weight: bold
+}
+
+nav #bt-mobile-menu {
+    display: none
+}
+
+@media (max-width: 625px) {
+    h1 {
+        padding: 3em 0 0 0;
+    }
+    #banner p {
+        font-size: 0.8em;
+    }
+    #banner p>strong {
+        -webkit-text-stroke: 2px #ffcc00;
+    }
+    nav #bt-mobile-menu {
+        display: block;
+    }
+    nav .bt-common-menu {
+        display: none;
+    }
+    nav .bt-common-menu.active {
+        display: block;
+    }
+    nav ul.mobile-mode {
+        display: flex;
+        flex-direction: column;
+    }
+    nav a {
+        color: #FFC600;
+    }
+    img#user {
+        display: none
+    }
+}
+
+main {
+    background: #4C005A
+}
+
+/*#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                                                Começo-Footer
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+footer {
+    background-image: linear-gradient(#4C005A, #FFC600);
+    text-align: center
+}
+
+#Logo-footer {
+    width: 20%;
+    height: 20%;
+    margin: 10% 0% 0% 0%;
+}
+
+
+/*#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                                                Começo-Login
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+#Login  h1 {
+    top: 0px;
+    padding: 20% 6% 10% 0%;
+    background: #4C005A;
+    color: #FFC600;
+    padding: 20px 0 50px 0;
+    text-align: center;
+}
+#Login label {
+    color: #FFC600;
+    text-align: center;
+    margin: 0% 0% 15% 7.5%;
+    font-size: 1.5em
+}
+
+#Login input:not([type="checkbox"]) {
+    width: 80%;
+    height: 10%;
+    margin-top: 0%;
+    padding: 2.5%;
+    border: 1px solid #FFC600;
+    margin: 0% 0% 5% 7.5%;
+    text-align: center
+}
+
+#Login input[type="submit"] {
+    width: 40%;
+    cursor: pointer;
+    color: #4C005A;
+    background: #FFC600;
+    text-align: center;
+    margin: 0% 50% 5% 30%
+}
+
+#Login a {
+    color: #4c005a;
+    margin: 0% 0% 0% 0%;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+#enviar-login {
+    width: 15%;
+    height: 15%;
+    cursor: pointer;
+    color: #4C005A;
+    background: #FFC600;
+    text-align: center;
+    margin: 0% 0% 0% 43%;
+    font-size: large;
+}
+
+
+/*#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                                                Começo-Orçamento
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+#Orcamento {
+    width: 84%;
+    padding: 2% 6% 60px 6%; 
+}
+
+#Orcamento h1 {
+    color: #FFC600;
+    text-align: center;
+}
+
+
+.content {
+    width: 100%;
+    min-height: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+h2 {
+    color: #FFC600;
+    padding: 2px 0 10px 0;
+    text-align: center;
+    background: #4C005A
+}
+
+#Orcamento label {
+    color: #FFC600;
+    position: relative
+}
+
+#Orcamento input:not([type="checkbox"]) {
+    width: 100%;
+    margin: 0% 0 5% 0;
+    padding: 0.5%;
+    border: 1px solid #FFC600;
+    text-align: center;
+}
+
+#enviar-orcamento {
+    width: 25%;
+    cursor: pointer;
+    color: #4C005A;
+    background: #FFC600;
+    text-align: center;
+    margin: 5% 0% 0% 40%;
+}
+
+#enviar-orcamento a {
+    text-decoration: none;
+    font-size: 1.5em
+}
+
+#Orcamento p {
+    color: #FFC600;
+    margin: 2% 0 0 0
+}
+
+#Iluminacao  {
+    margin: 2% 0 0 0
+}
+/*#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                                                Começo-Feedback
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+#Faq {
+    color: #FFC600;
+    text-align: center;
+    margin: 7.5% 0 0 0;
+}
+#Opiniao {
+    color: #FFC600;
+    text-align: center;
+    margin: 7.5% 0 0 0;
+}
+
+
+#Faq p {
+    color: #FFC600;
+    text-align: center;
+}
+#Opiniao p {
+    color: #FFC600;
+    text-align: center;
+}
+
+#Faq h1 {
+    margin: 5% 0 0 0
+}
+
+#Faq label {
+    color: #FFC600;
+}
+#Opiniao label {
+    color: #FFC600;
+}
+
+#Faq input:not([type="checkbox"]) {
+    width: 90%;
+    padding: 1%;
+    margin: 0 0% 5% 0%;
+    border: 1px solid #FFC600;
+    text-align: center;
+}
+
+#Opiniao input:not([type="checkbox"]) {
+    width: 90%;
+    padding: 1%;
+    margin: 0 0% 5% 0%;
+    border: 1px solid #FFC600;
+    text-align: center;
+}
+
+#obs p {
+    color: #FFC600;
+    margin: 10% 0 0 10%;
+    text-align: start;
+}
+
+#enviar-feedback p {
+    text-align: center;
+}
+
+#enviar-feedback p a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #4C005A;
+    cursor: pointer;
+    background: #FFC600;
+}
+
+#Opiniao h1 {
+    margin: 10% 0% 10% 0%
+}
+
+#Opiniao {
+    color: #FFC600;
+    text-align: center;
+    margin: 7.5% 0 0 0
+}
+
+#Opiniao h1 {
+    margin: 5% 0 2% 0
+}
+/*#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                                                Começo-Espaço
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+#Galeria h1 {
+    margin: 0% 0 5% 0%
+}
+
+.slidershow{
+    width: 40%;
+    height: 20%;
+    
+  }
+  .middle{
+    top: 50%;
+    left: 50%;
+    transform: translate(2.5%,-0%);
+  }
+  .navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  .bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid #FFC600;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .bar:hover{
+    background: #FFC600;
+  }
+  
+  input[name="r"]{
+      position: absolute;
+      visibility: hidden;
+  }
+  
+  .slides{
+    width: 250%;
+    height: 70%;
+    display: flex;
+        
+  }  
+  .slide{
+    width: 20%;
+    transition: 0.6s;
+  }
+  .slide img{
+    width: 100%;
+    height: 100%;
+  }
+  #r1:checked ~ .s1{
+    margin-left: 0;
+  }
+  #r2:checked ~ .s1{
+    margin-left: -20%;
+  }
+  #r3:checked ~ .s1{
+    margin-left: -40%;
+  }
+  #r4:checked ~ .s1{
+    margin-left: -60%;
+  }
+  .slidershow{
+    width: 95%;
+    height: 75%;
+    overflow: hidden;
+  }
+/*#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                                                Começo-Cadastro
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+#Cadastro {
+    width: 88%;
+    padding: 2% 6% 60px 6%;
+    background: #4C005A;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    min-height: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#Cadastro h1 {
+    color: #FFC600;
+    padding: 2px 0 10px 0;
+    text-align: center;
+}
+
+#Cadastro label {    
+    color: #FFC600;
+    text-align: center;
+}
+
+#Cadastro input:not([type="checkbox"]) {
+    width: 100%;
+    height: 5%;
+    margin-top: 0%;
+    padding: 1%;
+    border: 1px solid #FFC600;
+    margin: 0% 0% 5% 0%;
+    text-align: center
+}
+
+#Cadastro input[type="submit"] {
+    width: 25%;
+    cursor: pointer;
+    color: #4C005A;
+    background: #FFC600;
+    text-align: center;
+    margin: 5% 0% 0% 40.8%
+}
+
+#termos {
+    text-align: end;
+    margin: 3% 0% 0% 0%
+}
+
+#loga{
+        height: 100%;
+        text-align: center;
+        text-decoration: none;
+        color: #FFC600;
+}
+#loga a{
+        height: 100%;
+        text-align: center;
+        text-decoration: none;
+        color: #FFC600;
+}
+
+#enviar-cadastro {
+    width: 25%;
+    cursor: pointer;
+    color: #4C005A;
+    background: #FFC600;
+    text-align: center;
+    margin: 5% 0% 5% 38%;
+}
+
+#enviar-cadastro a {
+    text-decoration: none;
+    font-size: 1.5em
+}

@@ -7,30 +7,32 @@ using RoleTop_MVC.ViewModels;
 
 namespace RoleTop_MVC.Controllers {
     public class OrcamentoController : AbstractController {
-        OrcamentoRepositorio orcamentorepositorio = new OrcamentoRepositorio ();
+        OrcamentoRepositorio orcamentoRepositorio = new OrcamentoRepositorio ();
+        IluminacaoRepositorio iluminacaoRepositorio = new IluminacaoRepositorio ();
+        SomRepositorio somRepositorio = new SomRepositorio ();
+        ClienteRepositorio clienteRepositorio = new ClienteRepositorio ();
+        
         public IActionResult Index () {
-            ClienteViewModel clienteviewmodel = new ClienteViewModel(ObterUsuarioNomeSession());
-            return View(clienteviewmodel);
-        }
-        /*public IActionResult Registrar (IFormCollection form) {
-            ViewData["Action"] = "Orcamento";
-            try {
-                Orcamento orcamento = new Orcamento (
-                    form["nome"],
-                    form["email"],
-                    form["telefone"],
-                    form["cpf"],
-                    DateTime.Parse (form["data_evento"]),
-                    form["evento"],
-                    double.Parse (form["quantidade_pessoas"]),
-                    form["observacao"]);
+            var iluminacoes = iluminacaoRepositorio.ObterTodos();
+            var sons = somRepositorio.ObterTodos();
 
-                return View ("Sucesso");
-            } catch (Exception e) {
-                System.Console.WriteLine (e.StackTrace);
-                return View ("Erro");
+            OrcamentoViewModel orcamento = new OrcamentoViewModel();
+            orcamento.Iluminacoes = iluminacoes;
+            orcamento.Sons = sons;
+
+            var usuarioLogado = ObterUsuarioSession();
+            var nomeUsuarioLogado = ObterUsuarioNomeSession();
+            if(!string.IsNullOrEmpty(nomeUsuarioLogado)){
+                orcamento.NomeUsuario = nomeUsuarioLogado;
             }
-        }*/
+
+            var clienteLogado = clienteRepositorio.ObterPor(usuarioLogado);
+            if(clienteLogado != null){
+                orcamento.Cliente = clienteLogado;
+            }
+            ClienteViewModel orcamentoViewModel = new ClienteViewModel  (ObterUsuarioNomeSession());
+            return View(orcamentoViewModel);
+        }
         public IActionResult CriarEvento () 
         {
             switch (ObterUsuarioNomeSession ()) {
@@ -39,8 +41,8 @@ namespace RoleTop_MVC.Controllers {
                 case "":
                     return RedirectToAction ("Index", "Home");
                 default:
-                    ClienteViewModel clienteviewmodel = new ClienteViewModel (ObterUsuarioNomeSession ());
-                    return View (clienteviewmodel);
+            ClienteViewModel orcamentoViewModel = new ClienteViewModel(ObterUsuarioNomeSession());
+            return View(orcamentoViewModel);
             }
         }
 
@@ -50,14 +52,16 @@ namespace RoleTop_MVC.Controllers {
             try
             {
                 Orcamento evento = new Orcamento(
-                    form["Organizador"],
-                    DateTime.Parse(form["DataEvento"]),
-                    form["Evento"],
-                    int.Parse(form["QuantidadePessoas"]),
-                    form["Observacao"]
+                    DateTime.Parse(form["dataEvento"]),
+                    form["evento"],
+                    int.Parse(form["quantidadePessoas"]),
+                    form["observacao"]
                 );
-                evento.Organizador = ObterUsuarioNomeSession();
-                orcamentorepositorio.Inserir(evento);
+                Cliente cliente = new Cliente(
+                    form["usuario"]
+                );
+                cliente.Usuario = ObterUsuarioNomeSession();
+                orcamentoRepositorio.Inserir(evento);
                 
                 return RedirectToAction("Index","Cliente");
                 

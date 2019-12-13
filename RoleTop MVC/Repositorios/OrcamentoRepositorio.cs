@@ -23,9 +23,9 @@ namespace RoleTop_MVC.Repositorios {
             foreach (var linha in linhas) {
                 if (ExtrairValorDoCampo ("login", linha) == email) {
                     Cliente c = new Cliente ();
-                    c.Usuario = ExtrairValorDoCampo ("Usuario", linha);
-                    c.Nome = ExtrairValorDoCampo ("Nome", linha);
-                    c.Email = ExtrairValorDoCampo ("Email", linha);
+                    c.Usuario = ExtrairValorDoCampo ("usuario", linha);
+                    c.Nome = ExtrairValorDoCampo ("nome", linha);
+                    c.Email = ExtrairValorDoCampo ("email", linha);
                     c.Telefone = ExtrairValorDoCampo ("Telefone", linha);
                     c.CPF = ExtrairValorDoCampo ("CPF", linha);
                     c.DataNascimento = DateTime.Parse (ExtrairValorDoCampo ("DataNascimento", linha));
@@ -43,7 +43,7 @@ namespace RoleTop_MVC.Repositorios {
                 if(ExtrairValorDoCampo("ID",linhas[i]) == ID){
                     Orcamento o = new Orcamento();
                     o.ID = ulong.Parse(ExtrairValorDoCampo("ID",linhas[i]));
-                    o.Organizador = ExtrairValorDoCampo("Organizador",linhas[i]);
+                    o.Cliente.Usuario = ExtrairValorDoCampo("usuario",linhas [i]);
                     o.DataEvento = DateTime.Parse(ExtrairValorDoCampo("DataEvento",linhas[i]));
                     o.Evento = ExtrairValorDoCampo("Evento",linhas[i]);
                     o.QuantidadePessoas = double.Parse(ExtrairValorDoCampo("QuantidadePessoas",linhas[i]));
@@ -60,14 +60,14 @@ namespace RoleTop_MVC.Repositorios {
             var linhas = File.ReadAllLines(PATH);
             for(int i =0; i < linhas.Length; i++)
             {
-                if(ExtrairValorDoCampo("ID",linhas[i]) == ID){
+                if(ExtrairValorDoCampo("id",linhas[i]) == ID){
                     Orcamento o = new Orcamento();
-                    o.ID = ulong.Parse(ExtrairValorDoCampo("ID",linhas[i]));
-                    o.Organizador = ExtrairValorDoCampo("Organizador",linhas[i]);
-                    o.DataEvento = DateTime.Parse(ExtrairValorDoCampo("DataEvento",linhas[i]));
-                    o.Evento = ExtrairValorDoCampo("Evento",linhas[i]);
-                    o.QuantidadePessoas = double.Parse(ExtrairValorDoCampo("QuantidadePessoas",linhas[i]));
-                    o.Observacao = ExtrairValorDoCampo("Observacao",linhas[i]);
+                    o.ID = ulong.Parse(ExtrairValorDoCampo("id",linhas[i]));
+                    o.Cliente.Usuario = ExtrairValorDoCampo("usuario",linhas [i]);
+                    o.DataEvento = DateTime.Parse(ExtrairValorDoCampo("dataEvento",linhas[i]));
+                    o.Evento = ExtrairValorDoCampo("evento",linhas[i]);
+                    o.QuantidadePessoas = double.Parse(ExtrairValorDoCampo("quantidadePessoas",linhas[i]));
+                    o.Observacao = ExtrairValorDoCampo("observacao",linhas[i]);
                     o.Status = 1;
                     linhas[i] = PrepararOrcamentoCSV(o);
                     File.WriteAllLines(PATH, linhas);
@@ -80,14 +80,14 @@ namespace RoleTop_MVC.Repositorios {
             List<Orcamento> Eventos = new List<Orcamento>();
             var linhas = File.ReadAllLines(PATH);
             foreach(var linha in linhas){
-                if(ExtrairValorDoCampo("Organizador",linha) == NomeCliente){
+                if(ExtrairValorDoCampo("usuario",linha) == NomeCliente){
                     Orcamento o = new Orcamento();
-                    o.ID = ulong.Parse(ExtrairValorDoCampo("ID",linha));
-                    o.Organizador = ExtrairValorDoCampo("Organizador",linha);
-                    o.DataEvento = DateTime.Parse(ExtrairValorDoCampo("DataEvento",linha));
-                    o.Evento = ExtrairValorDoCampo("Evento",linha);
-                    o.QuantidadePessoas = double.Parse(ExtrairValorDoCampo("QuantidadePessoas",linha));
-                    o.Status = uint.Parse(ExtrairValorDoCampo("Status",linha));
+                    o.ID = ulong.Parse(ExtrairValorDoCampo("id",linha));
+                    o.Cliente.Usuario = ExtrairValorDoCampo("usuario",linha);
+                    o.DataEvento = DateTime.Parse(ExtrairValorDoCampo("dataEvento",linha));
+                    o.Evento = ExtrairValorDoCampo("evento",linha);
+                    o.QuantidadePessoas = double.Parse(ExtrairValorDoCampo("quantidadePessoas",linha));
+                    o.Status = uint.Parse(ExtrairValorDoCampo("status",linha));
                     Eventos.Add(o);
                 }
             }
@@ -98,20 +98,20 @@ namespace RoleTop_MVC.Repositorios {
             List<Orcamento> Eventos = new List<Orcamento>();
             var linhas = File.ReadAllLines(PATH);
             foreach(var linha in linhas){
-                if(ExtrairValorDoCampo("Status",linha) == "0"){
+                if(ExtrairValorDoCampo("status",linha) == "0"){
                     Orcamento o = new Orcamento();
-                    o.ID = ulong.Parse(ExtrairValorDoCampo("ID",linha));
-                    o.Organizador = ExtrairValorDoCampo("Organizador",linha);
-                    o.DataEvento = DateTime.Parse(ExtrairValorDoCampo("DataEvento",linha));
-                    o.Evento = ExtrairValorDoCampo("Evento",linha);
-                    o.QuantidadePessoas = double.Parse(ExtrairValorDoCampo("QuantidadePessoas",linha));
-                    o.Status = uint.Parse(ExtrairValorDoCampo("Status",linha));
+                    o.ID = ulong.Parse(ExtrairValorDoCampo("id",linha));
+                    o.Cliente.Usuario = ExtrairValorDoCampo("usuario",linha);
+                    o.DataEvento = DateTime.Parse(ExtrairValorDoCampo("dataEvento",linha));
+                    o.Evento = ExtrairValorDoCampo("evento",linha);
+                    o.QuantidadePessoas = double.Parse(ExtrairValorDoCampo("quantidadePessoas",linha));
+                    o.Status = uint.Parse(ExtrairValorDoCampo("status",linha));
                     Eventos.Add(o);
                 }
             }
             return Eventos;
         }
         private string PrepararOrcamentoCSV (Orcamento orcamento) {
-            return $"ID={orcamento.ID};Organizador={orcamento.Organizador};DataEvento={orcamento.DataEvento};Evento={orcamento.Evento};QuantidadePessoas={orcamento.QuantidadePessoas};Status={orcamento.Status}";}
+            return $"id={orcamento.ID};dataEvento={orcamento.DataEvento};evento={orcamento.Evento};quantidadePessoas={orcamento.QuantidadePessoas};status={orcamento.Status}";}
     }
 }
