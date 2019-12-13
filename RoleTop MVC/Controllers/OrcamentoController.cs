@@ -51,15 +51,21 @@ namespace RoleTop_MVC.Controllers {
         {
             try
             {
+                Cliente cliente = new Cliente(
+                    form["usuario"]
+                );
                 Orcamento evento = new Orcamento(
                     DateTime.Parse(form["dataEvento"]),
                     form["evento"],
                     int.Parse(form["quantidadePessoas"]),
                     form["observacao"]
                 );
-                Cliente cliente = new Cliente(
-                    form["usuario"]
+                Som som = new Som(
+                    form["som"]
                 );
+                Iluminacao iluminacao = new Iluminacao(
+                    form["iluminacao"]);
+                    
                 cliente.Usuario = ObterUsuarioNomeSession();
                 orcamentoRepositorio.Inserir(evento);
                 

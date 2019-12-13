@@ -6,6 +6,11 @@ namespace RoleTop_MVC.Models
     {
         public Som(){
         }
+
+        public Som(StringValues stringValues)
+        {
+        }
+
         public Som(double preco, string tipo){
             this.Preco = preco;
             this.Tipo = tipo;

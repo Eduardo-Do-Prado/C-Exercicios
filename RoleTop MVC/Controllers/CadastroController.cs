@@ -34,7 +34,7 @@ namespace RoleTop_MVC.Controllers {
                     form["email"],
                     form["telefone"],
                     form["cpf"],
-                    DateTime.Parse (form["data-nascimento"]),
+                    DateTime.Parse (form["dataNascimento"]),
                     form["senha"]);
 
                 clienteRepositorio.Inserir (cliente);

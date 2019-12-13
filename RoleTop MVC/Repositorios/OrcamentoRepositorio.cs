@@ -21,15 +21,15 @@ namespace RoleTop_MVC.Repositorios {
         public Cliente ObterPor (string email) {
             var linhas = File.ReadAllLines (PATH);
             foreach (var linha in linhas) {
-                if (ExtrairValorDoCampo ("login", linha) == email) {
+                if (ExtrairValorDoCampo ("usuario", linha) == email) {
                     Cliente c = new Cliente ();
                     c.Usuario = ExtrairValorDoCampo ("usuario", linha);
                     c.Nome = ExtrairValorDoCampo ("nome", linha);
                     c.Email = ExtrairValorDoCampo ("email", linha);
-                    c.Telefone = ExtrairValorDoCampo ("Telefone", linha);
-                    c.CPF = ExtrairValorDoCampo ("CPF", linha);
-                    c.DataNascimento = DateTime.Parse (ExtrairValorDoCampo ("DataNascimento", linha));
-                    c.Senha = ExtrairValorDoCampo ("Senha", linha);
+                    c.Telefone = ExtrairValorDoCampo ("telefone", linha);
+                    c.CPF = ExtrairValorDoCampo ("cpf", linha);
+                    c.DataNascimento = DateTime.Parse (ExtrairValorDoCampo ("dataNascimento", linha));
+                    c.Senha = ExtrairValorDoCampo ("senha", linha);
                     return c;
                 }
             }
@@ -40,14 +40,14 @@ namespace RoleTop_MVC.Repositorios {
             var linhas = File.ReadAllLines(PATH);
             for(int i =0; i < linhas.Length; i++)
             {
-                if(ExtrairValorDoCampo("ID",linhas[i]) == ID){
+                if(ExtrairValorDoCampo("id",linhas[i]) == ID){
                     Orcamento o = new Orcamento();
-                    o.ID = ulong.Parse(ExtrairValorDoCampo("ID",linhas[i]));
+                    o.ID = ulong.Parse(ExtrairValorDoCampo("id",linhas[i]));
                     o.Cliente.Usuario = ExtrairValorDoCampo("usuario",linhas [i]);
-                    o.DataEvento = DateTime.Parse(ExtrairValorDoCampo("DataEvento",linhas[i]));
-                    o.Evento = ExtrairValorDoCampo("Evento",linhas[i]);
-                    o.QuantidadePessoas = double.Parse(ExtrairValorDoCampo("QuantidadePessoas",linhas[i]));
-                    o.Observacao = ExtrairValorDoCampo("Observacao",linhas[i]);
+                    o.DataEvento = DateTime.Parse(ExtrairValorDoCampo("dataEvento",linhas[i]));
+                    o.Evento = ExtrairValorDoCampo("evento",linhas[i]);
+                    o.QuantidadePessoas = double.Parse(ExtrairValorDoCampo("quantidadePessoas",linhas[i]));
+                    o.Observacao = ExtrairValorDoCampo("observacao",linhas[i]);
                     o.Status = 1;
                     linhas[i] = PrepararOrcamentoCSV(o);
                     File.WriteAllLines(PATH, linhas);
